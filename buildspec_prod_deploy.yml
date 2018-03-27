@@ -6,5 +6,5 @@ phases:
       - gem install minima 
   build:
     commands:
-      - echo "******** Uploading to S3 ********"
-      - aws s3 sync s3://jekyll-site-staging s3://jekyll-site-1
+      - echo "******** Copying to S3 nerdthoughts.net-staging to www.nerdthoughts.net ********"
+      - aws s3 sync s3://nerdthoughts.net-staging s3://www.nerdthoughts.net
