@@ -2,7 +2,7 @@
 layout: post
 title: Under Construction
 description: Moving my blog from Blogger to Jekyll and AWS S3
-date: '2018-03-27T00:00:00.000-05:00'
+date: '2018-03-26T00:00:00.000-05:00'
 author: Stephen Ziegler
 tags:
 - dev
