@@ -11,6 +11,6 @@ phases:
       - echo "******** Building Jekyll site ********"
       - jekyll build
       - echo "******** Uploading to S3 nerdthought.net-staging ********"
-      - aws s3 sync _site/ s3://nerdthought.net-staging
+      - aws s3 sync _site/ s3://nerdthoughts.net-staging
       - echo "******** Checking links ********"
       - check-links _site
