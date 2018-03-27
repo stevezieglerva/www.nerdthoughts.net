@@ -1,0 +1,11 @@
+{% capture imagePath %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ include.name | append:'-small.jpg' }}{% endcapture %}
+{% capture imagePathLarge %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ include.name | append:'.jpg' }}{% endcapture %}
+{% if include.caption %}
+<figure style="display: block; margin-left: auto; margin-right: auto; text-align: center; ">
+	<a href="/assets/posts/{{ imagePathLarge }}"><img src="/assets/posts/{{ imagePath }}"  style="display: block; margin-left: auto; margin-right: auto; text-align: center; "  {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/></a>
+	<figcaption >{{ include.caption }}</figcaption>
+</figure>
+{% else %}
+	<a href="/assets/posts/{{ imagePathLarge }}"><img src="/assets/posts/{{ imagePath }}" style="display: block; margin-left: auto; margin-right: auto; text-align: center; " {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/></a>
+{% endif %}
+

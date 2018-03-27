@@ -1,0 +1,10 @@
+version: 0.1
+   
+phases:
+  install:
+    commands:
+      - gem install minima 
+  build:
+    commands:
+      - echo "******** Uploading to S3 ********"
+      - aws s3 sync s3://jekyll-site-staging s3://jekyll-site-1

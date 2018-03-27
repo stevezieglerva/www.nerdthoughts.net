@@ -1,0 +1,12 @@
+---
+layout: post
+title: Creating Tab Delimited Output With JQ In DOS
+date: '2015-03-13T10:00:00.000-04:00'
+author: Stephen Ziegler
+tags: 
+modified_time: '2015-03-13T10:00:01.019-04:00'
+blogger_id: tag:blogger.com,1999:blog-1727955271917225446.post-5785301212627702207
+blogger_orig_url: http://www.nerdthoughts.net/2015/03/creating-tab-delimited-output-with-jq.html
+---
+
+I've been using <a href="http://stedolan.github.io/jq/manual/">jq</a> to play around with JSON data returned from webservices. It's a great command line tool for manipulating and prettifying JSON.<br /><br />This <a href="https://github.com/stedolan/jq/issues/48">post </a>describes how to get tab separated values out of jq on UNIX. &nbsp;But, the format and escaping is different if you're trying it in DOS. &nbsp;Here's an example to iterate through some Elasticsearch results (aggregations and buckets arrays) in the temp_results.json file to create a counts.txt file with the key and doc_count fields separated by a tab.<br /><br /><br /><pre style="background: #ffffff; color: black;"><html><body style="background: #ffffff; color: black;"><pre><br />jq <span style="color: #808030;">-</span>r <span style="color: maroon;">"</span><span style="color: #0000e6;">.aggregations[] | .buckets[] | </span><span style="color: #0f69ff;">\"</span><span style="color: #0f69ff;">\(</span><span style="color: #0000e6;">.key)\t</span><span style="color: #0f69ff;">\(</span><span style="color: #0000e6;">.doc_count)</span><span style="color: #0f69ff;">\"</span><span style="color: maroon;">"</span> temp_results<span style="color: #808030;">.</span>json <span style="color: #808030;">&gt;</span> counts<span style="color: #808030;">.</span>txt<br /></pre></body></html></pre>
