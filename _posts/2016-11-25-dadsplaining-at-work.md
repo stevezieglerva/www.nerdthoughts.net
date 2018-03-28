@@ -27,6 +27,9 @@ I used my usual story for explaining how indexes can and cannot help, depending 
 
 > Imagine if the index of the book told you that "cancer" appeared somewhere between pages 200 and 700 or it listed several hundred pages where cancer appeared. Or, imagine you wanted to find the verbs of sentences that contained the word "the." A database table index wouldn't help you much in these scenarios. This is like an index with low selectivity. There aren't enough unique index values to help find exact records.
 	
-I also described how composite indexes are needed to match the the exact columns and column order of the where clauses in your SQL. I think that was the missing piece in the previous attempt to add indexes to improve performance.<br /><br />I got a nice IM after the discussion thanking me for the descriptions of indexes. I don't always dadsplain at work, but when I do, it's nice to get some positive feedback.
+I also described how composite indexes are needed to match the the exact columns and column order of the where clauses in your SQL. I think that was the missing piece in the previous attempt to add indexes to improve performance.
 
-<div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-hmyKSxGoK7k/WDhELEnD9FI/AAAAAAAAhRc/0FIRgFwk248UuAUiEbDZQnmxp8KQZflCgCLcB/s1600/skype.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="305" src="https://4.bp.blogspot.com/-hmyKSxGoK7k/WDhELEnD9FI/AAAAAAAAhRc/0FIRgFwk248UuAUiEbDZQnmxp8KQZflCgCLcB/s400/skype.png" width="400" /></a></div><br /><br /><br />
+I got a nice IM after the discussion thanking me for the descriptions of indexes. I don't always dadsplain at work, but when I do, it's nice to get some positive feedback.
+
+{% include image.html name="skype" atl="Skype Message" caption="Skype Message" %}
+
