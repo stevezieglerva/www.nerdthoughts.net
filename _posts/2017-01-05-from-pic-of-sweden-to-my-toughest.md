@@ -28,7 +28,7 @@ One time when he was visiting the US, he offered to come to my office and we spe
 
 I also grew to love his smart sense of humor. At one point, he asked for a ballpark estimate for an enhancement. As a consultant, I was always hesitant to give an immediate, gut feeling estimate to a client. After hemming and hawing for a while, he said:
 
-	"Steve, if we can put a man on the moon, surely you can give me this enhancement."
+>	"Steve, if we can put a man on the moon, surely you can give me this enhancement."
 
 In a different meeting, he perfectly summarized the entire business of producing chemicals:
 - make big molecules smaller

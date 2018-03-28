@@ -20,11 +20,12 @@ Growing up, my dad wouldn't just answer a question from the kids. He would follo
 I also try to do it with co-workers, but I'm sensitive not to force it on people like I force it on my kids. I also try to save it for receptive audiences. I recently helped a team look into a slow data conversion routine. I was convinced that indexes would help since the total data manipulated was less than .5GB (pretty small in database terms).
 
 I used my usual story for explaining how indexes can and cannot help, depending on the uniqueness of the index columns:
-	Imagine I gave you a 1,000 page medical encyclopedia and asked you to find the verb of every sentence that had the word "cancer" in it. How would you do that? Would you open to page 1 and start reading? That would be a slow way to do it and is equivalent to a full-table scan on a large table.	
 
-	The faster way would be to flip back to the index, see if "cancer" is one of the indexed words, and jump directly to those pages to read. You might only have to read a few pages and this would be a great use of an index. Because the word cancer is pretty unique across the pages, it saves a lot of time reading pages. This is like an index with high selectivity: the number of unique items in the index compared to the number of items in the table.
-	
-	Imagine if the index of the book told you that "cancer" appeared somewhere between pages 200 and 700 or it listed several hundred pages where cancer appeared. Or, imagine you wanted to find the verbs of sentences that contained the word "the." A database table index wouldn't help you much in these scenarios. This is like an index with low selectivity. There aren't enough unique index values to help find exact records.
+> Imagine I gave you a 1,000 page medical encyclopedia and asked you to find the verb of every sentence that had the word "cancer" in it. How would you do that? Would you open to page 1 and start reading? That would be a slow way to do it and is equivalent to a full-table scan on a large table.	
+
+> The faster way would be to flip back to the index, see if "cancer" is one of the indexed words, and jump directly to those pages to read. You might only have to read a few pages and this would be a great use of an index. Because the word cancer is pretty unique across the pages, it saves a lot of time reading pages. This is like an index with high selectivity: the number of unique items in the index compared to the number of items in the table.
+
+> Imagine if the index of the book told you that "cancer" appeared somewhere between pages 200 and 700 or it listed several hundred pages where cancer appeared. Or, imagine you wanted to find the verbs of sentences that contained the word "the." A database table index wouldn't help you much in these scenarios. This is like an index with low selectivity. There aren't enough unique index values to help find exact records.
 	
 I also described how composite indexes are needed to match the the exact columns and column order of the where clauses in your SQL. I think that was the missing piece in the previous attempt to add indexes to improve performance.<br /><br />I got a nice IM after the discussion thanking me for the descriptions of indexes. I don't always dadsplain at work, but when I do, it's nice to get some positive feedback.
 
