@@ -10,8 +10,6 @@ blogger_id: tag:blogger.com,1999:blog-1727955271917225446.post-11568751829286946
 blogger_orig_url: http://www.nerdthoughts.net/2017/01/from-pic-of-sweden-to-my-toughest.html
 ---
 
-<div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-thAXTIUvBik/WG3T899a2OI/AAAAAAAAhTE/ElVho-eZNxcDLHhKSokWbYpLhdjaHCCeACLcB/s1600/sweden.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="https://1.bp.blogspot.com/-thAXTIUvBik/WG3T899a2OI/AAAAAAAAhTE/ElVho-eZNxcDLHhKSokWbYpLhdjaHCCeACLcB/s320/sweden.jpg" width="180" /></a></div><br /><br />
-
 A few months ago, Iris Classon tweeted a picture from Gothenburg, Sweden.<br />
 
 <blockquote class="twitter-tweet" lang="en">Out for a walk. Gothenburg University at 2AM under a full moon. Simply magical. <a href="http://t.co/TidOiWdUcw">pic.twitter.com/TidOiWdUcw</a><br />— Iris Classon (@IrisClasson) <a href="https://twitter.com/IrisClasson/statuses/435215451283787776">February 17, 2014</a></blockquote><script async="" charset="utf-8" src="//platform.twitter.com/widgets.js"></script>
@@ -28,7 +26,7 @@ One time when he was visiting the US, he offered to come to my office and we spe
 
 I also grew to love his smart sense of humor. At one point, he asked for a ballpark estimate for an enhancement. As a consultant, I was always hesitant to give an immediate, gut feeling estimate to a client. After hemming and hawing for a while, he said:
 
->	"Steve, if we can put a man on the moon, surely you can give me this enhancement."
+> "Steve, if we can put a man on the moon, surely you can give me this enhancement."
 
 In a different meeting, he perfectly summarized the entire business of producing chemicals:
 - make big molecules smaller
