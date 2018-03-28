@@ -21,3 +21,4 @@ While preparing for a client demo, someone recommended I look at [Clavin](https:
 - [Lucene](https://lucene.apache.org/) - A full text search engine used to quickly lookup text references, including fuzzy matches
 
 Clavin uses Stanford NER as the first pass for guesses on locations. It then uses Lucene to look up exact and fuzzy matches of the Geoname gazetteer data as the second pass on location detection. It works best on news-style language. It works pretty well, especially given the complexities of natural language.
+
