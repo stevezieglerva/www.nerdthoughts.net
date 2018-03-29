@@ -18,4 +18,3 @@ In my third year of college, I took a class called "CS340 Advance Software Engin
 - Comparing government code challenges
 - I logged a bug on a government website and it was fixed the next day
 - I FELL IN LOVE! with a tweet. (about agile)   
- 
