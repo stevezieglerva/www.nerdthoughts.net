@@ -4,8 +4,6 @@ title: Work
 description: Summary of posts related to IT work
 ---
 
-
-
 > "Software Engineering Is Hard"
 > John C. Knight, ~1996  
 
