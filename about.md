@@ -5,7 +5,7 @@ desc: About page describing Steve Ziegler
 permalink: /about/
 ---
 
-I'm a VP of Engineering at ICF, a VA-based consulting firm. ICF does some really cool "make the world a better place" projects. I work in energy, environment, and transportation, mostly with the Federal government.
+I'm a [VP of Engineering](https://www.linkedin.com/in/steve-ziegler/) at ICF, a VA-based consulting firm. ICF does some really cool "make the world a better place" projects. I work in energy, environment, and transportation, mostly with the Federal government.
 
 
 I'm interested in a lots of IT and other random things:
