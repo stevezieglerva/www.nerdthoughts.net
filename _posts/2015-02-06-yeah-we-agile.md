@@ -12,7 +12,7 @@ blogger_id: tag:blogger.com,1999:blog-1727955271917225446.post-52195580996925324
 blogger_orig_url: http://www.nerdthoughts.net/2015/02/yeah-we-agile.html
 ---
 
-{% include test.html name="test" atl="test" caption="what is the page slug?" %}
+{% include image.html name="test" atl="test" caption="what is the page slug?" %}
 
 
 
