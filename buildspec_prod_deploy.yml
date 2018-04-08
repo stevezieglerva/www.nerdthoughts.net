@@ -7,4 +7,4 @@ phases:
   build:
     commands:
       - echo "******** Copying to S3 nerdthoughts.net-staging to www.nerdthoughts.net ********"
-      - aws s3 sync s3://nerdthoughts.net-staging s3://www.nerdthoughts.net
+      - aws s3 sync s3://nerdthoughts.net-staging s3://www.nerdthoughts.net --delete
