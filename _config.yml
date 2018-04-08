@@ -30,6 +30,7 @@ plugins:
 
 # Google Analytics
 google_analytics: UA-115475820-1
+environment: production
   
 #permalink: /:categories/:year/:month/:title:output_ext
 
