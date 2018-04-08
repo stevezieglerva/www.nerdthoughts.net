@@ -2,6 +2,7 @@
 layout: post
 title: Losing Confidence Cleaning Up After Equifax
 description: This weekend, I spent time trying to clean up from the Equifax data breach. In the era of fake news and fake URLs, I've lost a lot confidence in websites dealing with sensitive information.
+permalink: /2017/09/losing-confidence-cleaning-up-after.html
 date: '2017-09-11T09:04:00.002-04:00'
 author: Stephen Ziegler
 tags: 
