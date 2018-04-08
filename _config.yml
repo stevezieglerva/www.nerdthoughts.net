@@ -31,7 +31,7 @@ plugins:
 # Google Analytics
 google_analytics: UA-115475820-1
   
-permalink: /:categories/:year/:month/:title:output_ext
+#permalink: /:categories/:year/:month/:title:output_ext
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
