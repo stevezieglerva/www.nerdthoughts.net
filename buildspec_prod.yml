@@ -5,7 +5,7 @@ phases:
     commands:
       - gem install minima 
       - gem install link-checker
-      - gem install jekyll:3.7.3 jekyll-paginate jekyll-sitemap jekyll-gist
+      - gem install jekyll
   build:
     commands:
       - echo "******** Building Jekyll site ********"
