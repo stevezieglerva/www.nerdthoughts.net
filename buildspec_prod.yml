@@ -3,7 +3,7 @@ version: 0.1
 phases:
   install:
     commands:
-      - gem install jekyll 
+      - gem install jekyll -v 3.7.3
   build:
     commands:
       - echo "******** Building Jekyll site ********"
