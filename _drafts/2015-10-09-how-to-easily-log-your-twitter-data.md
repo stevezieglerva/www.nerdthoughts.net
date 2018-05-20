@@ -55,4 +55,4 @@ Here's how you can set up a Zap to automatically append Twitter (tweets, mention
 </ul>
 {% include image.html name="followers_details" atl="Zapier followers field mapping details" caption="Zapier followers field mapping details" %}
 
-If you don't like this method, you can try [downloading your Twitter archive](https://support.twitter.com/articles/20170160) (tweets only), using scripting in a language like Python, or [find an existing tool/service](https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#q=search%20tool%20for%20my%20twitter%20data).
+If you don't like this method, you can try [downloading your Twitter archive](https://support.twitter.com/articles/20170160), using scripting in a language like Python, or find an existing tool/service.
