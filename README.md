@@ -1,2 +1,2 @@
-# jekyll-site-1
+# www.nerdthoughts.net
 Test Jekyll site
