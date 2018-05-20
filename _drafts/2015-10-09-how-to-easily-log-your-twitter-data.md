@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to Easily Log Your Twitter Data Using Zapier and Dropbox
+description: Archiving tweets with Zapier and Dropbox
 date: '2015-10-09T13:46:00.002-04:00'
 author: Stephen Ziegler
 tags:
@@ -16,13 +17,14 @@ I often find myself looking for past tweets and followers trying to find a speci
 
 Here's how you can set up a Zap to automatically append Twitter (tweets, mentions, favorites, new followers) data to a simple text file:
 
-
 <ul>
 
 
-<li>Create a Zap with Twitter/My Tweet as the trigger and Dropbox/Append Text File as the action. The Append Text File action is key to this solution and allows you to continually add to the end of the file. I think it's new within the last year or so. I had previously set up a Zap to store tweet information in a Google Spreadsheet but it forced me to set up the exact columns beforehand and was not easy to change.</li></ul>
+<li>Create a Zap with Twitter/My Tweet as the trigger and Dropbox/Append Text File as the action. The Append Text File action is key to this solution and allows you to continually add to the end of the file. I think it's new within the last year or so. I had previously set up a Zap to store tweet information in a Google Spreadsheet but it forced me to set up the exact columns beforehand and was not easy to change.</li>
+</ul>
 
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-DRSy59p_5Qw/Vhf4besIhTI/AAAAAAAAhKM/4paIpE5ZvKo/s1600/twitter_zap_setup.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="166" src="http://2.bp.blogspot.com/-DRSy59p_5Qw/Vhf4besIhTI/AAAAAAAAhKM/4paIpE5ZvKo/s640/twitter_zap_setup.png" width="640" /></a></div>
+{% include image.html name="zapier_triggers" atl="Zapier triggers" caption="Zapier triggers" %}
+
 
 <ul>
 
@@ -38,6 +40,5 @@ Here's how you can set up a Zap to automatically append Twitter (tweets, mention
 <li>favorites:</li></ul></ul><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-vy0ItuLK_A4/Vhf7gD0bx1I/AAAAAAAAhKs/Y_XlCCkfR58/s1600/Twitter%2BFavorite.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="121" src="http://1.bp.blogspot.com/-vy0ItuLK_A4/Vhf7gD0bx1I/AAAAAAAAhKs/Y_XlCCkfR58/s400/Twitter%2BFavorite.png" width="400" /></a></div><div class="separator" style="clear: both; text-align: center;">
 </div><div class="separator" style="clear: both; text-align: center;"></div><ul><ul><li style="text-align: left;">new followers:</li></ul></ul><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-SSmlneWZZrg/Vhf74ANOWRI/AAAAAAAAhK0/TdmcTxlapMs/s1600/Twitter%2BFollowers.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="221" src="http://3.bp.blogspot.com/-SSmlneWZZrg/Vhf74ANOWRI/AAAAAAAAhK0/TdmcTxlapMs/s400/Twitter%2BFollowers.png" width="400" /></a></div><div style="text-align: left;">
 </div>
-<div>
-</div></div>
-If you don't like this method, you can try <a href="https://support.twitter.com/articles/20170160">downloading your Twitter archive</a> (tweets only), using scripting in a language like Python, or <a href="https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#q=search%20tool%20for%20my%20twitter%20data">find an existing tool/service</a>.
+
+If you don't like this method, you can try [downloading your Twitter archive](https://support.twitter.com/articles/20170160) (tweets only), using scripting in a language like Python, or [find an existing tool/service](https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#q=search%20tool%20for%20my%20twitter%20data).
