@@ -32,13 +32,27 @@ Here's how you can set up a Zap to automatically append Twitter (tweets, mention
 <li>Select the folder for your Dropbox files. I created a new folder called Twitter to store several files</li>
 <li>Choose the fields to append to your file. I chose to use a multi-line format with record delimiters and field labels. I like this format because it is human-readable and will allow me to easily parse it in the future with a tool like AWK, even if the file becomes huge. To make it a little more readable, I added a literal "@" before any user name fields. Since I use the same file for tweets and mentions, I added a literal "type: mytweet" to help me separate that data.</li></ul>
 
-<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-qBCTNt9jVrg/Vhf5rfJ3ilI/AAAAAAAAhKY/6zSC24eO6iI/s1600/Twitter%2BTweet%2BFile.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="243" src="http://3.bp.blogspot.com/-qBCTNt9jVrg/Vhf5rfJ3ilI/AAAAAAAAhKY/6zSC24eO6iI/s400/Twitter%2BTweet%2BFile.png" width="400" /></a></div>
+{% include image.html name="tweet_details" atl="Zapier tweet field mapping details" caption="Zapier tweet field mapping details" %}
+
 
 <ul>
 <li>Create other Zaps to log mentions, new followers and favorites. Here is how I setup the file contents for the other files:</li><ul>
-<li>mentions:</li></ul></ul><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-lY18wQDkPXE/Vhf7CSt6lhI/AAAAAAAAhKk/-w514BTbQ5s/s1600/Twitter%2BMentions.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="135" src="http://1.bp.blogspot.com/-lY18wQDkPXE/Vhf7CSt6lhI/AAAAAAAAhKk/-w514BTbQ5s/s400/Twitter%2BMentions.png" width="400" /></a></div><div><ul><ul>
-<li>favorites:</li></ul></ul><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-vy0ItuLK_A4/Vhf7gD0bx1I/AAAAAAAAhKs/Y_XlCCkfR58/s1600/Twitter%2BFavorite.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="121" src="http://1.bp.blogspot.com/-vy0ItuLK_A4/Vhf7gD0bx1I/AAAAAAAAhKs/Y_XlCCkfR58/s400/Twitter%2BFavorite.png" width="400" /></a></div><div class="separator" style="clear: both; text-align: center;">
-</div><div class="separator" style="clear: both; text-align: center;"></div><ul><ul><li style="text-align: left;">new followers:</li></ul></ul><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-SSmlneWZZrg/Vhf74ANOWRI/AAAAAAAAhK0/TdmcTxlapMs/s1600/Twitter%2BFollowers.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="221" src="http://3.bp.blogspot.com/-SSmlneWZZrg/Vhf74ANOWRI/AAAAAAAAhK0/TdmcTxlapMs/s400/Twitter%2BFollowers.png" width="400" /></a></div><div style="text-align: left;">
-</div>
+<li>mentions:</li>
+</ul>
+{% include image.html name="mentions_details" atl="Zapier mentions field mapping details" caption="Zapier mentions field mapping details" %}
+
+
+<ul>
+<li>favorites:</li>
+</ul>
+{% include image.html name="favorites_details" atl="Zapier favorites field mapping details" caption="Zapier favorites field mapping details" %}
+
+
+
+
+<ul>
+<li style="text-align: left;">new followers:</li>
+</ul>
+{% include image.html name="followers_details" atl="Zapier followers field mapping details" caption="Zapier followers field mapping details" %}
 
 If you don't like this method, you can try [downloading your Twitter archive](https://support.twitter.com/articles/20170160) (tweets only), using scripting in a language like Python, or [find an existing tool/service](https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#q=search%20tool%20for%20my%20twitter%20data).
