@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Dadsplaining at Work
+description: Finding the right way to teach at work
+permalink: /2016/11/dadsplaining-at-work.html
 date: '2016-11-25T09:41:00.002-05:00'
 author: Stephen Ziegler
 tags:

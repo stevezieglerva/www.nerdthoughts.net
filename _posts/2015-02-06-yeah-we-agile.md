@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Yeah, we're Agile.
+description: Comparision of "doing agile" vs. "being agile"
+permalink: /2015/02/yeah-we-agile.html
 date: '2015-02-06T07:43:00.000-05:00'
 permalink: /2015/02/yeah-we-agile.html
 author: Stephen Ziegler

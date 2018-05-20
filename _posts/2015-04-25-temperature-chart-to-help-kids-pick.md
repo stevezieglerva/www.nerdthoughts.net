@@ -3,6 +3,7 @@ layout: post
 title: Temperature Chart To Help Kids Pick Their Clothes
 date: '2015-04-25T09:03:00.000-04:00'
 description: Simple chart to help young kids know which clothes to wear
+permalink: /2015/04/temperature-chart-to-help-kids-pick.html
 categories: [kids, design]
 modified_time: '2015-04-25T09:03:54.166-04:00'
 thumbnail: http://4.bp.blogspot.com/-blVB--56IXs/VTuHDK3axvI/AAAAAAAAhEM/YLkeXJnXlgs/s72-c/temperature%2Bexcel.png

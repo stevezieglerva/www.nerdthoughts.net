@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Beauty of Elasticsearch Bool Query Should Clauses for Boosting
+description: Review of Elasticsearch's boolean query
 date: '2015-03-24T17:47:00.002-04:00'
+permalink: /2015/03/beauty-of-elasticsearch-bool-query.html
 author: Stephen Ziegler
 tags:
 - work

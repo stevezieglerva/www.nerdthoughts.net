@@ -9,9 +9,9 @@ description: Summary of posts related to IT work
 
 In my third year of college, I took a class called "CS340 Advance Software Engineering Methods." The professor came in on the first day and quietly wrote "Software Engineering is Hard" on the blackboard. Little did I realize how true that statement was and often I would think about it throughout my career. But, while building systems is still hard, it certainly has gotten easier with agile practices, software frameworks, cloud hosting, and DevOps. Here are few of my blog posts focused on those improvements and other interesting things from my work life:
 
-- [Yeah, we're Agile](/2015/02/yeah-we-agile.html)
-- [From a picture of Sweden to my toughest customer](/2017/01/from-pic-of-sweden-to-my-toughest.html)
-- [Dadsplaining at work](2016/11/dadsplaining-at-work.html)
+- [Yeah, we're Agile]({% post_url 2015-02-06-yeah-we-agile %})
+- [From a picture of Sweden to my toughest customer]({% post_url 2017-01-05-from-pic-of-sweden-to-my-toughest %})
+- [Dadsplaining at work]({% post_url 2016-11-25-dadsplaining-at-work %})
 
 
 <!--

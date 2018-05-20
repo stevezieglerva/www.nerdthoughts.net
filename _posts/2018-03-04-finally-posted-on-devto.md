@@ -2,6 +2,7 @@
 layout: post
 title: Finally posted on dev.to
 description: I finally wrote a post for dev.to. I talked about learning the building blocks of software development as a way to fend of the desire to learn every new thing.
+permalink: /2018/03/finally-posted-on-devto.html
 date: '2018-03-04T11:00:00.000-05:00'
 author: Stephen Ziegler
 tags:

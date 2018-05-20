@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Creative Geoparser Tool for Natural Language
+description: Description of the three key pieces of a geoparser
+permalink: /2016/04/creative-geoparser-tool-for-natural.html
 date: '2016-04-02T00:09:00.000-04:00'
 author: Stephen Ziegler
 tags:
