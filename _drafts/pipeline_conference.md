@@ -6,3 +6,5 @@
 	- Design and review on local
 	- Different pipeline based on risk
 - Little bugs, but frustrating bugs, get fixed on Saturdays off hours by developers because it is so easy and safe to deploy
+- Earnest 
+	- Blameless postportums for incidents
