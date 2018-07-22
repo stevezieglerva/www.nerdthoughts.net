@@ -1,12 +1,18 @@
-version: 0.1
+version: 0.2
    
 phases:
   install:
     commands:
-      - gem install jekyll:3.7.3 minima:2.0 jekyll-feed:0.6
+      - gem install bundler
+      - curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+      - apt-get install nodejs
+      - bundle install
   build:
     commands:
       - echo "******** Building Jekyll site ********"
-      - jekyll build --verbose --drafts
-      - echo "******** Uploading to S3 nerdthoughts.net-staging ********"
-      - aws s3 sync _site/ s3://nerdthoughts.net-staging
+      - bundle exec jekyll build --verbose --drafts
+      - echo "******** Uploading to S3 nerdthought.net-staging ********"
+      - aws s3 sync _site/ s3://nerdthoughts.net-staging --delete
+
+
+
