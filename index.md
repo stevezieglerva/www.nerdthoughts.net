@@ -5,6 +5,6 @@
 layout: home
 ---
 ![Sunrise Clouds]({{ "/assets/home-page-clouds.jpeg" | absolute_url }})
-# Nerd Thoughts - under construction 3/27/18
+# Nerd Thoughts
 
 
