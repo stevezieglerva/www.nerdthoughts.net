@@ -8,7 +8,7 @@ tags:
 - dev, aws
 ---
 
-The [awslogs](https://github.com/jorgebastida/awslogs) project provides a really easy way to search and understand AWS CloudWatch logs. You can easily wrap the tool in a loop to tail the logs. Here is a simple DOS batch file that searches for lines with keywords (like "starting", "processing"). It both appends the results to a running results.txt file and outputs them to the console.
+The [awslogs](https://github.com/jorgebastida/awslogs) project provides a really easy way to search and understand AWS CloudWatch logs. You can easily wrap the tool in a loop to tail the logs. Here is a simple DOS batch file that searches for lines with keywords (like "starting", "processing"). It both appends the results to a running log.txt file and outputs them to the console.
 
 {% highlight shell %}
 echo off
