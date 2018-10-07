@@ -1,11 +1,3 @@
----
-layout: post
-title: Elasticsearch: From open-source to $5B
-description: My first blog post
-date: '2018-10-07T00:37:00.002-05:00'
-author: Stephen Ziegler
-tags: elasticsearch
----
 
 # Elasticsearch: From open-source to $5B
 Elasticsearch went public on Friday. 
@@ -15,9 +7,9 @@ Elasticsearch went public on Friday.
 
 It's been really cool seeing the company evolve. I'm a huge fan of Elasticsearch. I started using it when porting an process to index my email from Solr. Compared to Solr, I really liked the more RESTful API using JSON. I also really like how every field was dynamic by default. It make it so easy to just throw data into it.
 
+It was interesting to watch their journey, especially as they shifted from just full-text search to a full analytics stack. You could see the transition through their partnerships and acquisitions: 
 
-
-	- Joined with L and K
-	- Bought Found
-	- Bought beats
-	- Bought ML company
+* Joined with Logstash and Kibana to make the ELK stack and combine the power of text searching with log metrics and visualizations
+* Bought Found
+* Bought beats
+* Bought ML company
