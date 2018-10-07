@@ -1,3 +1,7 @@
+---
+layout: post
+tags: elasticsearch
+---
 
 # Elasticsearch: From open-source to $5B
 Elasticsearch went public on Friday. 
