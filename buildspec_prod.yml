@@ -25,9 +25,9 @@ phases:
       - pwd
       - mkdir log
       - cd log
-      - cd ziegler
       - mkdir general_events
       - cd general_events
+      - ls -la
       - pwd
       - cd ..
       - cd ..
