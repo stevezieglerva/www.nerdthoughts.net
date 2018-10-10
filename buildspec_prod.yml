@@ -22,8 +22,10 @@ phases:
       - aws s3 sync _site/ s3://nerdthoughts.net --delete      
 
       - echo "******** Logging Build Event ********"
+      - pwd
       - mkdir log
       - cd log
+      - cd ziegler
       - mkdir general_events
       - cd general_events
       - pwd
