@@ -1,1 +1,1 @@
-{"type" : "blog", "event" : "build finished"}
+{"event_type" : "blog", "event" : "blog build finished"}
