@@ -25,15 +25,15 @@ phases:
       - pwd
       - mkdir log
       - cd log
-      - ls -la
       - mkdir general_events
+      - ls -la
       - cd general_events
       - ls -la
       - pwd
       - cd ..
       - cd ..
       - pwd
-      - cp build_event_json.txt /log/general_events/
+      - cp build_event_json.txt log/general_events/
       - aws s3 sync log/ s3://aws-s3-to-es     
 
 
