@@ -21,4 +21,17 @@ phases:
       - aws s3 sync _site/ s3://www.nerdthoughts.net --delete
       - aws s3 sync _site/ s3://nerdthoughts.net --delete      
 
+      - echo "******** Building Production Jekyll site ********"
+      - md log
+      - cd log
+      - md general_events
+      - cd general_events
+      - echo {""hello" : "world"} > build.txt
+      - cd ..
+      - cd ..
+      - aws s3 sync _site/ s3://aws-s3-to-es      
+
+
+
+
 
