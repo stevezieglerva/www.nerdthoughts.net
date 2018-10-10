@@ -24,9 +24,9 @@ phases:
       - echo "******** Logging Build Event ********"
       - pwd
       - mkdir log
-      - cd log
+      - cd /log
       - mkdir general_events
-      - cd general_events
+      - cd /general_events
       - ls -la
       - pwd
       - cd ..
