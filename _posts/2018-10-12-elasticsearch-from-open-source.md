@@ -2,7 +2,6 @@
 layout: post
 title: Elasticsearch: From open-source to $B
 description: Elastic's journey from full-text search engine to public full-stack monitoring and analytics solution
-date: '2018-10-12T00:00:00.000-05:00'
 author: Stephen Ziegler
 tags:
 - elasticsearch
