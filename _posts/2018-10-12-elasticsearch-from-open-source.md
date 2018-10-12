@@ -1,10 +1,14 @@
 ---
 layout: post
-tags: elasticsearch
+title: Elasticsearch: From open-source to $B
+description: Elastic's journey from full-text search engine to public full-stack monitoring and analytics solution
+date: '2018-10-12T00:00:00.000-05:00'
+author: Stephen Ziegler
+tags:
+- elasticsearch
 ---
 
-# Elasticsearch: From open-source to $B
-Elasticsearch went public on last week. 
+Elasticsearch went public last week. 
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Today was a grand day. Thank you to everyone for joining us on this journey. We look forward to what happens next. <a href="https://twitter.com/search?q=%24ESTC&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$ESTC</a> <a href="https://twitter.com/hashtag/Elasticsearch?src=hash&amp;ref_src=twsrc%5Etfw">#Elasticsearch</a> <a href="https://twitter.com/hashtag/RingZeBell?src=hash&amp;ref_src=twsrc%5Etfw">#RingZeBell</a> <a href="https://t.co/eYnZPpph11">pic.twitter.com/eYnZPpph11</a></p>&mdash; elastic (@elastic) <a href="https://twitter.com/elastic/status/1048302021143670786?ref_src=twsrc%5Etfw">October 5, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
