@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Elastic search no colon
+title: Elasticsearch - From open source to $B
+tags: elasticsearch
 ---
 
 Elasticsearch went public last week. 
