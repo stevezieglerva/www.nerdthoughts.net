@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Elastic search no colon
 ---
 
 Elasticsearch went public last week. 
