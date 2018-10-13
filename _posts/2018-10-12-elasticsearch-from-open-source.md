@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Elasticsearch - From open source to $B
+description: Elastic's journey from full-text search to a full analytics stack
 tags: elasticsearch
 ---
 
