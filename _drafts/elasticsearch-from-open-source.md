@@ -3,8 +3,6 @@ layout: post
 title: Elasticsearch: From open-source
 description: Elastic's journey from full-text search engine to public full-stack monitoring and analytics solution
 author: Stephen Ziegler
-tags:
-- elasticsearch
 ---
 
 Elasticsearch went public last week. 
