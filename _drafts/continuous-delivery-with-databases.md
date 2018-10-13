@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: elasticsearch
+tags: continuous delivery
 ---
 
 
