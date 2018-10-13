@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Elasticsearch: From open source to $B
+title: Elasticsearch - From open source to $B
 tags: elasticsearch
 ---
 
