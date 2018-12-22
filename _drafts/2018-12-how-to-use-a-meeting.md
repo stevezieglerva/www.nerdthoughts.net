@@ -15,5 +15,5 @@ As I've been an advocate for people, I try to use those same techniques to eleva
 
 * **Have the developer send the meeting invite** - This shows some ownership over the meeting and topic, even if it is just a perception.
 * **Make sure she has a speaking role** - She should have a defined speaking role during the meeting, even if just to review the agenda. You can use subsequant meetings to increase the speaking role.
-* **Coach him on how to confidently introduce himself** - A major factor in the perception of the developer's status is his confidence. Coach the developer on how to introduce himself with strong, active language: "I'm John Doe and I will be <leading/reviewing/building/showing> ..." Be sure to avoid phrases like "I'm here because Steve told me" or "I'll be *helping* Steve to."
+* **Coach him on how to confidently introduce himself** - A major factor in the perception of the developer's status is his confidence. Coach the developer on how to introduce himself with strong, active language: "I'm John Doe and I will be <leading/reviewing/building/showing/designing> ..." Be sure to avoid phrases like "I'm here because *Steve told me*" or "I'll be *helping* Steve to <lead/review/build/show/design>."
 
