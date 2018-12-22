@@ -1,9 +1,12 @@
 ---
 layout: post
-title: How To Use A Meeting
+title: How To Use A Meeting To Elevate a Team Member
 description: How to use a meeting to elevate a junior team member
 tags: leadership
 ---
+
+{% include image.html name="buddy-meeting" atl="Buddy the Elf says 'I like meetings. Meetings are my favorite.'" caption="Buddy Loves Meetings" %}
+
 
 I've been fortunate in my career to have very strong advocates. My advocates would mentor me and provide good opportunities for work and career advancement. A few years into my first job, my advocates positioned me for a leadership role on a new, large IT modernization project. They used a kickoff meeting with the client to elevate my status into a leadership role. The client, ExxonMobil, had just completed their merger to become the largest company in the world and was going to replace dozens of legacy systems with a new global, health and safety system for all of their business units. 
 
