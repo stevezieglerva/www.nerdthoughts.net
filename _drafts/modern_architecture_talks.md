@@ -7,6 +7,8 @@ description: List of modern architecture conference talks
 A senior developer in my engineering group has expressed interest in leading our next modernization project.
 
 https://youtu.be/STKCRSUsyP0
+<iframe width="560" height="315" src="https://www.youtube.com/embed/STKCRSUsyP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 https://youtu.be/wgdBVIX9ifA
 
