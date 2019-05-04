@@ -1,8 +1,10 @@
 ---
 layout: post
-title: Moddern Architecture Talks
+title: Modern Architecture Conference Talks
 description: List of modern architecture conference talks
 ---
+
+A senior developer in my engineering group has expressed interest in leading our next modernization project.
 
 https://youtu.be/STKCRSUsyP0
 
