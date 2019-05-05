@@ -34,17 +34,19 @@ https://youtu.be/9vS7TbgirgY
 # Stream All Things - Patterns of Modern Data Integration
 https://youtu.be/Hjae0Cw9oew
 
-[![Pragmatic Microservices](https://i.ytimg.com/vi/9vS7TbgirgY/hqdefault.jpg)](https://youtu.be/9vS7TbgirgY)
+[![Stream All Things - Patterns of Modern Data Integration](https://i.ytimg.com/vi/Hjae0Cw9oew/hqdefault.jpg)](https://youtu.be/Hjae0Cw9oew)
 
-#Robust Anamoly Detection For Real User Monitoring Data
+
+# Robust Anamoly Detection For Real User Monitoring Data
 https://youtu.be/0PtehdUL-38
 
-[![Pragmatic Microservices](https://i.ytimg.com/vi/9vS7TbgirgY/hqdefault.jpg)](https://youtu.be/9vS7TbgirgY)
+[![Robust Anamoly Detection For Real User Monitoring Data](https://i.ytimg.com/vi/0PtehdUL-38/hqdefault.jpg)](https://youtu.be/0PtehdUL-38)
+
 
 # What I Learned From 4 Years of Researching the Crap Out of DevOps
 https://pbell.wistia.com/medias/xlxb0awlp4?wtime=0
 
-[![Pragmatic Microservices](https://i.ytimg.com/vi/9vS7TbgirgY/hqdefault.jpg)](https://youtu.be/9vS7TbgirgY)
+[![What I Learned From 4 Years of Researching the Crap Out of DevOps](https://i.ytimg.com/vi/9vS7TbgirgY/hqdefault.jpg)](https://pbell.wistia.com/medias/xlxb0awlp4?wtime=0)
 
 You are not Google
 https://blog.bradfieldcs.com/you-are-not-google-84912cf44afb 
