@@ -15,6 +15,9 @@ You can never go wrong with Martin Fowler. He frequently reminds us that many of
 [![Many Meanings of Event-Driven Architectures](https://i.ytimg.com/vi/STKCRSUsyP0/hqdefault.jpg)](https://youtu.be/STKCRSUsyP0)
 
 
+
+
+
 # Microservices
 https://youtu.be/wgdBVIX9ifA
 
@@ -25,7 +28,7 @@ https://youtu.be/wgdBVIX9ifA
 I really like how this talk focuses a lot of the business drivers for Chik-fil-a's mobile architecture. It's really driven home with the pictures of the kitchens how their are fed with info on mobile orders to anticipate demand.
 
 [![6 Million Registrations in 30 Days](https://i.ytimg.com/vi/9tm0LsNBbzs/hqdefault.jpg)](https://youtu.be/9tm0LsNBbzs)
-
+<hr/>
 
 # Pragmatic Microservices
 Given his resume, Randy Shoup has a lot of good talks describing his expriences with distributed architectures. He, like many others, recommends building the monolith first. Distributed systems come with their own, complex problems.
