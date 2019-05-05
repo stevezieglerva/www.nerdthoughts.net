@@ -4,11 +4,13 @@ title: Modern Architecture Conference Talks
 description: List of conference talks on modern architecture considerations
 ---
 
-A senior developer in my engineering group has expressed interest in leading our next modernization project.
+A senior developer in my engineering group expressed interest in leading our next modernization project. It got me thinking about some modern architecture ideas that a lead architect should understand. While you might not use all of these techniques, you should have an understanding of them. 
+
+I love conference talks as a quick and easy way to get introduced to concepts. Here are some of my favorites.
 
 
 # Many Meanings of Event-Driven Architectures
-https://youtu.be/STKCRSUsyP0
+You can never go wrong with Martin Fowler. He frequently reminds us that many of these ideas are not actually new, but just re-packaged with modern tooling. I love his point that most developers have used a fully event-based data source without even knowing it.
 
 [![Many Meanings of Event-Driven Architectures](https://i.ytimg.com/vi/STKCRSUsyP0/hqdefault.jpg)](https://youtu.be/STKCRSUsyP0)
 
