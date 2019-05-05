@@ -10,24 +10,28 @@ I love conference talks as a quick and easy way to get introduced to concepts. H
 
 
 # Many Meanings of Event-Driven Architectures
+[![Many Meanings of Event-Driven Architectures](https://i.ytimg.com/vi/STKCRSUsyP0/hqdefault.jpg)](https://youtu.be/STKCRSUsyP0)
+
 You can never go wrong with Martin Fowler. He frequently reminds us that many of these ideas are not actually new, but just re-packaged with modern tooling. I love his point that most developers have used a fully event-based data source without even knowing it.
 
-[![Many Meanings of Event-Driven Architectures](https://i.ytimg.com/vi/STKCRSUsyP0/hqdefault.jpg)](https://youtu.be/STKCRSUsyP0)
 <hr/>
+
 
 
 
 
 # Microservices
+[![Microservices](https://i.ytimg.com/vi/wgdBVIX9ifA/hqdefault.jpg)](https://youtu.be/wgdBVIX9ifA)
+
 https://youtu.be/wgdBVIX9ifA
 
-[![Microservices](https://i.ytimg.com/vi/wgdBVIX9ifA/hqdefault.jpg)](https://youtu.be/wgdBVIX9ifA)
 <hr/>
 
 # 6 Million Registrations in 30 Days
+[![6 Million Registrations in 30 Days](https://i.ytimg.com/vi/9tm0LsNBbzs/hqdefault.jpg)](https://youtu.be/9tm0LsNBbzs)
+
 I really like how this talk focuses a lot of the business drivers for Chik-fil-a's mobile architecture. It's really driven home with the pictures of the kitchens how their are fed with info on mobile orders to anticipate demand.
 
-[![6 Million Registrations in 30 Days](https://i.ytimg.com/vi/9tm0LsNBbzs/hqdefault.jpg)](https://youtu.be/9tm0LsNBbzs)
 <hr/>
 
 # Pragmatic Microservices
