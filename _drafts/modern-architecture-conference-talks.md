@@ -46,7 +46,7 @@ https://youtu.be/0PtehdUL-38
 # What I Learned From 4 Years of Researching the Crap Out of DevOps
 https://pbell.wistia.com/medias/xlxb0awlp4?wtime=0
 
-{% include image.html name="jez_humble_devops" atl="Jez Humble video thumbnail" caption="" %}
+{% include image.html name="jezhumbledevops" atl="Jez Humble video thumbnail" caption="" %}
 
 
 
