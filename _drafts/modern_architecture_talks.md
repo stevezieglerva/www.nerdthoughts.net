@@ -38,3 +38,5 @@ https://pbell.wistia.com/medias/xlxb0awlp4?wtime=0
 
 You are not Google
 https://blog.bradfieldcs.com/you-are-not-google-84912cf44afb 
+
+find pragmatic orielly of conference talks

@@ -1,5 +1,6 @@
 title Git nerdthoughts.net
-echo Making %1 change
-git commit -a -m %1
-git push
+call git diff
+call set /p msg=Commit Message
+call git commit -a -m "  %msg%
+call git push
 
