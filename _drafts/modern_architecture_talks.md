@@ -9,6 +9,12 @@ A senior developer in my engineering group has expressed interest in leading our
 
 # Many Meanings of Event-Driven Architectures
 https://youtu.be/STKCRSUsyP0
+
+https://i.ytimg.com/vi/STKCRSUsyP0/hqdefault.jpg
+
+![Many Meanings of Event-Driven Architectures thumbnail](https://i.ytimg.com/vi/STKCRSUsyP0/hqdefault.jpg)"Many Meanings of Event-Driven Architectures")
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/STKCRSUsyP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
