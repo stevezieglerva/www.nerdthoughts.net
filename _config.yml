@@ -16,7 +16,10 @@
 title: Nerd Thoughts
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
-  Collection of posts on nerdy stuff that I like.
+  Collection of posts on nerdy stuff that I like. <a href="https://dev.to/stevezieglerva">
+  <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Steve Ziegler's DEV Profile" height="30" width="30">
+</a>
+     
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: stevezieglerva
