@@ -8,13 +8,11 @@ phases:
       - curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
       - apt-get install nodejs
       - bundle install
-  test:
-    spellcheck:
-    - cd test/spellcheck
-    - sh run_spellcheck.sh
-    - cd ../..
   build:
     commands:
+      - cd test/spellcheck
+      - sh run_spellcheck.sh
+      - cd ../..
       - echo "******** Building Staging Jekyll site with drafts ********"
       - bundle exec jekyll build --drafts --verbose
       - echo "******** Uploading to S3 nerdthought.net-staging ********"
