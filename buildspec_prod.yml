@@ -12,7 +12,7 @@ phases:
     commands:
       - python3 --version
       - cd test/spellcheck
-      - sudo apt-get install python3-venv 
+      - sudo apt-get install python3.4-venv
       - python3 -m venv venv
       - pip install -r requirements.txt
       - sh run_spellcheck.sh

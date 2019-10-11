@@ -86,4 +86,13 @@ Here's what I liked:
 - Misconfigured IAM is a huge risk
 - Who gets alerted if ports opened? S3 buckets made public?
 - Use drift detection to help automate remeadiation
+- Use required tags as part of drift strategy
+- Chaos engineering has benefits for security as well
+
+
+## []() by Jessica Repka
+
+anchore engine
+falco
+sysdig inspect
 
