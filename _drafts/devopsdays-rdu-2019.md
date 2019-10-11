@@ -4,7 +4,7 @@ title: DevOpsDay Raleigh 2019
 description: Take-aways from the conference
 ---
 
-I attended the 2019 DevOpsDays Raleigh and really enjoyed it. There were lots of great sessions. Here are my take-aways and highlights from my favorite talks. The live-stream video of talks is on the [DevOpsDays Raleigh Y](https://www.youtube.com/channel/UC4Xs0UbAdDaMRmStzhSsSag)
+I attended the 2019 DevOpsDays Raleigh and really enjoyed it. There were lots of great sessions. Here are my take-aways and highlights from my favorite talks. The live-stream video of talks is on the [DevOpsDays Raleigh YouTube channel.](https://www.youtube.com/channel/UC4Xs0UbAdDaMRmStzhSsSag)
 
 
 ## General Thoughts
@@ -90,9 +90,13 @@ Here's what I liked:
 - Chaos engineering has benefits for security as well
 
 
-## []() by Jessica Repka
+## [Open Source Container Security: A Brief Overview](https://drive.google.com/open?id=1EZkw1l4WUXMvl1WQ9Qnf1L6kW9_gBWlO) by Jessica Repka
+This one was honestly over my head but I knew that many of my colleagues would like it.
 
-anchore engine
-falco
-sysdig inspect
+Here's what I liked:
+- Good overview of Anchore Engine (scan images for CVEs and apply policies), Falco (image deployment prevention), and Sysdig Inspect (capture logs for forensics)
+- Jenkins plug-in information
+
+
+
 
