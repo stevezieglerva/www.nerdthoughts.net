@@ -8,6 +8,11 @@ phases:
       - curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
       - apt-get install nodejs
       - bundle install
+  test:
+    spellcheck:
+    - cd test/spellcheck
+    - sh run_spellcheck.sh
+    - cd ../..
   build:
     commands:
       - echo "******** Building Staging Jekyll site with drafts ********"
