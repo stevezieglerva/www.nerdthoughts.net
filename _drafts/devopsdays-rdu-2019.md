@@ -82,4 +82,8 @@ Here's what I liked:
 
 ## [Did Netflix Inadvertently Figure Out How to Better Secure the Cloud?](https://drive.google.com/open?id=1LVjLn83OjE0oX0jUCVcGovIHLeO7OUZB) by Ricardo Green
 
+Here's what I liked:
+- Misconfigured IAM is a huge risk
+- Who gets alerted if ports opened? S3 buckets made public?
+- Use drift detection to help automate remeadiation
 
