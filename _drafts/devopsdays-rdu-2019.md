@@ -51,9 +51,9 @@ Here's what I liked:
 - His stories of early DevOps conferences
 - The advice to not let innovation teams exist separately for too long before being brought back into the main business engine.
 
-## by Dave Rogers
+## [Just Enough Feature Flagging](https://drive.google.com/open?id=1m6pSIkTsifA5SaABbWhDGCCEQ7qf_zK8) by Dave Rogers
 
 Here's what I liked:
-- His very interactice session with the breaks to discuss deployment issues and feature flags with your seat neighbor
-- 
+- Very interactice session with the Story Time breaks to discuss deployment issues and feature flags with your seat neighbor
+- Last few slides summarizing common mistakes and good ideas
 
