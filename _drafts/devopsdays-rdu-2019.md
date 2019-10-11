@@ -75,9 +75,11 @@ Here's what I liked:
 This was the start of a series of security-focused talks. I enjoyed all of them, but this was my favorite.
 
 Here's what I liked:
-- Great summary slide of tradition IT security vs. DevOps security. 
+- Great summary slide of tradition IT security vs. DevOps security
 - Focus on active hacks vs. theorectical hacks! 
 - IBM open-sourced their [npm_audit_fixer](https://github.com/IBM/npm_audit_fixer) tool
 
 
-## 
+## [Did Netflix Inadvertently Figure Out How to Better Secure the Cloud?](https://drive.google.com/open?id=1LVjLn83OjE0oX0jUCVcGovIHLeO7OUZB) by Ricardo Green
+
+

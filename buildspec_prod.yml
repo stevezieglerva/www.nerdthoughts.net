@@ -10,8 +10,9 @@ phases:
       - bundle install
   build:
     commands:
-      - which python
+      - python3 --version
       - cd test/spellcheck
+      - sudo pt-get install python3-venv 
       - python3 -m venv venv
       - pip install -r requirements.txt
       - sh run_spellcheck.sh
