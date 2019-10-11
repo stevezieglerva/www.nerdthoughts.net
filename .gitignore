@@ -1,2 +1,3 @@
 *.code-workspace
 **/venv/**
+test/spellcheck/all_mds.txt
