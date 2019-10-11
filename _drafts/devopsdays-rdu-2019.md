@@ -4,14 +4,14 @@ title: DevOpsDay Raleigh 2019
 description: Take-aways from the conference
 ---
 
-I attended the 2019 DevOpsDays Raleigh and really enjoyed it. There were lots of great sessions. Here are my take-aways and highlights from my favorite talks. The live-stream video of talks is on the [](https://www.youtube.com/channel/UC4Xs0UbAdDaMRmStzhSsSag)
+I attended the 2019 DevOpsDays Raleigh and really enjoyed it. There were lots of great sessions. Here are my take-aways and highlights from my favorite talks. The live-stream video of talks is on the [DevOpsDays Raleigh Y](https://www.youtube.com/channel/UC4Xs0UbAdDaMRmStzhSsSag)
 
 
 ## General Thoughts
 - Don't forget culture during your transformation
 - Don't focus on finding a *single* root cause for an incident. There's rarely a single event.
 - Lots of talk about the huge learning opportunities from failures.
-- PMs and VPs don't get much respect as these events. :)
+- VPs don't get much respect as these events. Lots of jokes at our expense. :) 
 
 	 
 	 
