@@ -16,7 +16,7 @@ phases:
       - python3 -m venv venv
       - pip install -r requirements.txt
       - ls venv
-      - source venv/bin/activate
+      - . venv/bin/activate
       - sh run_spellcheck.sh
       - cd ../..
       - echo "******** Building Staging Jekyll site with drafts ********"
