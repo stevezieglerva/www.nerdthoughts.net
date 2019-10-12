@@ -4,13 +4,13 @@ title: DevOpsDay Raleigh 2019
 description: Take-aways from the conference
 ---
 
-I attended the 2019 DevOpsDays Raleigh and really enjoyed it. There were lots of great sessions. Here are my take-aways and highlights from my favorite talks. The live-stream video of talks is on the [DevOpsDays Raleigh YouTube channel.](https://www.youtube.com/channel/UC4Xs0UbAdDaMRmStzhSsSag)
+I attended the 2019 DevOpsDays Raleigh and really enjoyed it. Here are my take-aways and highlights from my favorite talks. The live-stream video of talks are on the [DevOpsDays Raleigh YouTube channel.](https://www.youtube.com/channel/UC4Xs0UbAdDaMRmStzhSsSag) and the individual talk videos should be up by mid-November.
 
 
 ## General Thoughts
 - Don't forget culture during your transformation
 - Don't focus on finding a *single* root cause for an incident. There's rarely a single event.
-- Lots of talk about the huge learning opportunities from failures.
+- Failures are great opportunities to learn
 - VPs don't get much respect as these events. Lots of jokes at our expense. :) 
 
 	 
@@ -23,17 +23,16 @@ I had seen Anne preview this talk at the local meetup but really enjoyed it a se
 Here's what I liked:
 
 - Her list of the reasons why companies execute projects
-- "Right people working on the right projects at the right time."
-    - Best people should be working on the most important projects.
+- "Right people working on the right projects at the right time." to make sure your best people are working on the most important projects.
 - Her belief that like the retail apocolypse, there is a digital apoloclypse for companies not ready to move fast with DevOps.
 
 ## [Expand Your DevOps Practice](https://drive.google.com/open?id=1qkMp7U8IKXWtWSHiwMhVyvY1c_VpBmne) by Marguerite Bryan
 
-I attended this workshop without really knowing what it was about. 
+I attended this workshop without really knowing what it was about. It turned out to be a nice workshop on value streams and being Lean.
 
 Here's what I liked:
 - DevOps is about culture and lean processes as much as technology
-- A fast DevOps approach and pipeline will be useless if ideas/projects are approved on an annual budgeting cycle and a Change Control Board meets quartlerly
+- A fast DevOps approach and pipeline will be useless if ideas/projects are approved on an annual budgeting cycle and a Change Control Board only meets quartlerly
 - The We Believe hypothesis template. I've seen this before in design thinking workshops and it was nice to see someone else recommend it. This is a great simple way to plan a test of a hyptohesis. 
 
 ```
