@@ -3,6 +3,8 @@ layout: post
 title: DevOpsDay Raleigh 2019
 description: Take-aways from the conference
 ---
+![](assets/devopsday-rdu-badge.jpg)
+
 
 I attended the 2019 DevOpsDays Raleigh and really enjoyed it. Here are my take-aways and highlights from my favorite talks. The live-stream video of talks are on the [DevOpsDays Raleigh YouTube channel.](https://www.youtube.com/channel/UC4Xs0UbAdDaMRmStzhSsSag) and the individual talk videos should be up by mid-November.
 
