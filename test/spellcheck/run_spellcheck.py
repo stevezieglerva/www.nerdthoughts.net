@@ -68,7 +68,6 @@ def read_markdown_filtered_file(filename):
 	return filtered_text
 
 
-print("Run")
 
 errors_found = False
 year = datetime.datetime.now().year

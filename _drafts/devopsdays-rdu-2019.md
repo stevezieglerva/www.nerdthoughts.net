@@ -54,11 +54,11 @@ We'll know this is true when 25% of the new customers have purchased the premium
 
 ## [Avoiding the Infamous DevOps Team!](https://drive.google.com/open?id=1xKHChHBRYo5jM1adWgTOjk9usuyo23H9) by John Esser
 
-This talk focused on when to bring any separate innovative DevOps teams back into the main business engine of standard work. I think some people focused too much on the somewhat controversial topic of what *not* to name the team.
+This talk focused on when to bring any separate innovative DevOps teams back into the main business engine of standard work. I think some people missed this main point and focused too much on the somewhat controversial topic of what *not* to name the team.
 
 Here's what I liked:
 - His stories of early DevOps conferences
-- The advice to not let innovation teams exist separately for too long before being brought back into the main business engine.
+- The advice to not let innovation teams exist separately for too long before bringing them back into the main business engine.
 
 
 ## [Just Enough Feature Flagging](https://drive.google.com/open?id=1m6pSIkTsifA5SaABbWhDGCCEQ7qf_zK8) by Dave Rogers
@@ -96,6 +96,6 @@ Here's what I liked:
 - Good overview of Anchore Engine (scan images for CVEs and apply policies), Falco (image deployment prevention), and Sysdig Inspect (capture logs for forensics)
 - Jenkins plug-in information
 
-
+The DevOpsDays series of conferences are a great (and cheap!) way to quickly get up to speed on current best practices. You should definitely try to attend one of your [local events.](https://devopsdays.org/)
 
 
