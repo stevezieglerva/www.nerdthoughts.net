@@ -15,6 +15,7 @@ phases:
       - yes | sudo apt-get --force-yes install python3.4-venv
       - python3 -m venv venv
       - pip install -r requirements.txt
+      - source venv/bin/activate
       - sh run_spellcheck.sh
       - cd ../..
       - echo "******** Building Staging Jekyll site with drafts ********"
