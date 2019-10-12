@@ -18,7 +18,8 @@ phases:
       - ls venv
       - . venv/bin/activate
       - python --version
-      - python test.py 
+      - ls -ls /usr/bin/python*
+      - python37 test.py 
       - sh run_spellcheck.sh
       - cd ../..
       - echo "******** Building Staging Jekyll site with drafts ********"
