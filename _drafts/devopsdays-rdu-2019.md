@@ -100,8 +100,13 @@ Here's what I liked:
 
 The DevOpsDays series of conferences are a great (and cheap!) way to quickly get up to speed on current best practices. You should definitely try to attend one of your [local events.](https://devopsdays.org/)
 
+
+## Build and Monitor Machine Learning Services in Kubernetes by Kirk Kaiser
+
+Here's what I liked:
+
+
 ## Intelligent Deployment Pipelines by Martez Reed
 
-
-## machine learning clock movie
+Here's what I liked:
 
