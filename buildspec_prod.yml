@@ -14,9 +14,9 @@ phases:
       - cd test/spellcheck
       - yes | sudo apt-get --force-yes install python3.4-venv
       - python3 -m venv venv
+      - . venv/bin/activate
       - pip install -r requirements.txt
       - ls venv
-      - . venv/bin/activate
       - ls -ls /usr/bin/python*
       - sh run_spellcheck.sh
       - cd ../..
