@@ -2,8 +2,6 @@ version: 0.2
    
 phases:
   install:
-    runtime-versions:
-      python: 6
     commands:
       - gem update --system
       - gem install bundler

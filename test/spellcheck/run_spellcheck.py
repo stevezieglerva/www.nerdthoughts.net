@@ -13,7 +13,7 @@ class SubmissionSpellChecker():
 	def __init__(self):
 		self.spell = SpellChecker()
 		self.spell.word_frequency.load_text_file("all_mds.txt")
-		ignore_words = ["aws", "#", "##", "###", "####", "#####", "devops", "http", "com", "jpg", "miica", "trello", "solutioning", "etl", "oig", "owasp", "sonarqube", "php", "website", "handoffs", "standups", "sagemaker", "talend", "nutch", "gensim", "vscode", "tf", "idf", "markdown", "wireframes", "mvp", "nosql", "dynamodb", "prototyped", "retros", "devs", "cloudfront", "lambdas", "unittest", "unittest", "jasmine", "worldspace", "prioritized", "lambdas", "tokenizing", "leverages", "paas", "microservices", "vpc", "cloudtrail", "cloudwatch", "iam", "jumpcloud", "saml", "sso", "mysql", "virtualized", "cdn", "downloads", "mdasii", "userguide", "init", "decrypt", "venv", "vpcs", "pre-signed", "priv", "url", "etls", "decryption", "dwhadmn", "ziegler", "Vectorization", "Financialmodelingprep", "backend", "initializers", "rmsprop", "overfitting", "dirichlet", "py", "optimizes", "iac"]
+		ignore_words = ["aws"]
 		for word in ignore_words:
 			self.spell.word_frequency.add(word)
 
@@ -23,7 +23,6 @@ class SubmissionSpellChecker():
 		spelled_correctly = True
 		line_number = 0
 		for line in filtered_text:
-			#print(f"checking: {line}")
 			line_number = line_number + 1
 			words = line.split()
 			for word in words:
@@ -71,17 +70,17 @@ def read_markdown_filtered_file(filename):
 
 errors_found = False
 year = datetime.datetime.now().year
-md_files = glob.glob(f"../../_posts/{year}*.md")
+md_files = glob.glob("../../_posts/{}*.md".format(year))
 for file in md_files:
 	text_lines = read_markdown_filtered_file(file)  
 	line_count = len(text_lines)
-	print(f"File: {file} ({line_count})")
+	print("File: {} ({})".format(file, line_count))
 	results = spellchecker.check_spelling(text_lines)
 	for mispelling in results["mispellings"]:
 		line = mispelling["line"]
 		word = mispelling["mispelling"]
 		suggestion = mispelling["suggestions"]
-		print(f"\tLine: {line}  for '{word}' try '{suggestion}'")
+		print("\tLine: {}  for '{}' try '{}'".format(line, word, suggestion))
 		print()
 		errors_found = True
 
