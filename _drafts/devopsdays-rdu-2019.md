@@ -30,6 +30,7 @@ Here's what I liked:
 - Her belief that like the retail apocolypse, there is a digital apoloclypse for companies not ready to move fast with DevOps.
 
 ---
+
 ## [Expand Your DevOps Practice](https://drive.google.com/open?id=1qkMp7U8IKXWtWSHiwMhVyvY1c_VpBmne) 
 ### *by Marguerite Bryan*
 
@@ -56,7 +57,7 @@ will achieve an increase in sales of the premium subscription service.
 We'll know this is true when 25% of the new customers have purchased the premium service.
 ```
   
-
+---
 
 
 ## [Avoiding the Infamous DevOps Team!](https://drive.google.com/open?id=1xKHChHBRYo5jM1adWgTOjk9usuyo23H9) 
@@ -70,7 +71,8 @@ Here's what I liked:
 
 ---
 
-## [Just Enough Feature Flagging](https://drive.google.com/open?id=1m6pSIkTsifA5SaABbWhDGCCEQ7qf_zK8) by Dave Rogers
+## [Just Enough Feature Flagging](https://drive.google.com/open?id=1m6pSIkTsifA5SaABbWhDGCCEQ7qf_zK8) 
+### *by Dave Rogers*
 
 Here's what I liked:
 - Very interactice session with the Story Time breaks to discuss deployment issues and feature flags with your seat neighbor
@@ -79,7 +81,9 @@ Here's what I liked:
 ---
 
 
-## [DevSecOps: How to level up your organization’s security expertise](https://drive.google.com/open?id=19JNUB4xAL3RCmacNQdALot0dFGeAvu69) by Ann Marie Fred
+## [DevSecOps: How to level up your organization’s security expertise](https://drive.google.com/open?id=19JNUB4xAL3RCmacNQdALot0dFGeAvu69) 
+### *by Ann Marie Fred*
+
 This was the start of a series of security-focused talks. I enjoyed all of them, but this was my favorite.
 
 Here's what I liked:
@@ -89,7 +93,8 @@ Here's what I liked:
 
 ---
 
-## [Did Netflix Inadvertently Figure Out How to Better Secure the Cloud?](https://drive.google.com/open?id=1LVjLn83OjE0oX0jUCVcGovIHLeO7OUZB) by Ricardo Green
+## [Did Netflix Inadvertently Figure Out How to Better Secure the Cloud?](https://drive.google.com/open?id=1LVjLn83OjE0oX0jUCVcGovIHLeO7OUZB) 
+### *by Ricardo Green*
 
 Here's what I liked:
 - Misconfigured IAM is a huge risk
@@ -98,8 +103,11 @@ Here's what I liked:
 - Use required tags as part of drift strategy
 - Chaos engineering has benefits for security as well
 
+---
 
-## [Open Source Container Security: A Brief Overview](https://drive.google.com/open?id=1EZkw1l4WUXMvl1WQ9Qnf1L6kW9_gBWlO) by Jessica Repka
+## [Open Source Container Security: A Brief Overview](https://drive.google.com/open?id=1EZkw1l4WUXMvl1WQ9Qnf1L6kW9_gBWlO) 
+### *by Jessica Repka*
+
 This one was honestly over my head but I knew that many of my colleagues would like it.
 
 Here's what I liked:
@@ -108,13 +116,17 @@ Here's what I liked:
 
 The DevOpsDays series of conferences are a great (and cheap!) way to quickly get up to speed on current best practices. You should definitely try to attend one of your [local events.](https://devopsdays.org/)
 
+---
 
-## Build and Monitor Machine Learning Services in Kubernetes by Kirk Kaiser
+## Build and Monitor Machine Learning Services in Kubernetes 
+### *by Kirk Kaiser*
 
 Here's what I liked:
 
+--- 
 
-## Intelligent Deployment Pipelines by Martez Reed
+## Intelligent Deployment Pipelines 
+### *by Martez Reed*
 
 Here's what I liked:
 
