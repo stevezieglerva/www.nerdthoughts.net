@@ -18,8 +18,9 @@ I attended the 2019 DevOpsDays Raleigh and really enjoyed it. Here are my take-a
 	 
 ---
 
-## [Know Your Numbers](https://drive.google.com/open?id=18-OFq--aD-4dswf73zuY-ngWGlP5LQib) 
-### *by Anne Hungate*
+## Culture
+### [Know Your Numbers](https://drive.google.com/open?id=18-OFq--aD-4dswf73zuY-ngWGlP5LQib) 
+#### *by Anne Hungate*
 
 I had seen Anne preview this talk at the local meetup but really enjoyed it a second time. 
 
@@ -29,10 +30,10 @@ Here's what I liked:
 - "Right people working on the right projects at the right time." to make sure your best people are working on the most important projects.
 - Her belief that like the retail apocolypse, there is a digital apoloclypse for companies not ready to move fast with DevOps.
 
----
 
-## [Expand Your DevOps Practice](https://drive.google.com/open?id=1qkMp7U8IKXWtWSHiwMhVyvY1c_VpBmne) 
-### *by Marguerite Bryan*
+
+### [Expand Your DevOps Practice](https://drive.google.com/open?id=1qkMp7U8IKXWtWSHiwMhVyvY1c_VpBmne) 
+#### *by Marguerite Bryan*
 
 I attended this workshop without really knowing what it was about. It turned out to be a nice workshop on value streams and being Lean.
 
@@ -57,11 +58,11 @@ will achieve an increase in sales of the premium subscription service.
 We'll know this is true when 25% of the new customers have purchased the premium service.
 ```
   
----
 
 
-## [Avoiding the Infamous DevOps Team!](https://drive.google.com/open?id=1xKHChHBRYo5jM1adWgTOjk9usuyo23H9) 
-### *by John Esser*
+
+### [Avoiding the Infamous DevOps Team!](https://drive.google.com/open?id=1xKHChHBRYo5jM1adWgTOjk9usuyo23H9) 
+#### *by John Esser*
 
 This talk focused on when to bring any separate innovative DevOps teams back into the main business engine of standard work. I think some people missed this main point and focused too much on the somewhat controversial topic of what *not* to name the team.
 
@@ -71,18 +72,37 @@ Here's what I liked:
 
 ---
 
-## [Just Enough Feature Flagging](https://drive.google.com/open?id=1m6pSIkTsifA5SaABbWhDGCCEQ7qf_zK8) 
-### *by Dave Rogers*
+
+## Tech
+
+### [Just Enough Feature Flagging](https://drive.google.com/open?id=1m6pSIkTsifA5SaABbWhDGCCEQ7qf_zK8) 
+#### *by Dave Rogers*
 
 Here's what I liked:
 - Very interactice session with the Story Time breaks to discuss deployment issues and feature flags with your seat neighbor
 - Last few slides summarizing common mistakes and good ideas
 
+
+
+
+### Build and Monitor Machine Learning Services in Kubernetes 
+#### *by Kirk Kaiser*
+
+Here's what I liked:
+
+
+
+### Intelligent Deployment Pipelines 
+#### *by Martez Reed*
+
+Here's what I liked:
+
 ---
 
+## Security
 
-## [DevSecOps: How to level up your organization’s security expertise](https://drive.google.com/open?id=19JNUB4xAL3RCmacNQdALot0dFGeAvu69) 
-### *by Ann Marie Fred*
+### [DevSecOps: How to level up your organization’s security expertise](https://drive.google.com/open?id=19JNUB4xAL3RCmacNQdALot0dFGeAvu69) 
+#### by Ann Marie Fred
 
 This was the start of a series of security-focused talks. I enjoyed all of them, but this was my favorite.
 
@@ -91,10 +111,10 @@ Here's what I liked:
 - Focus on active hacks vs. theorectical hacks! 
 - IBM open-sourced their [npm_audit_fixer](https://github.com/IBM/npm_audit_fixer) tool
 
----
 
-## [Did Netflix Inadvertently Figure Out How to Better Secure the Cloud?](https://drive.google.com/open?id=1LVjLn83OjE0oX0jUCVcGovIHLeO7OUZB) 
-### *by Ricardo Green*
+
+### [Did Netflix Inadvertently Figure Out How to Better Secure the Cloud?](https://drive.google.com/open?id=1LVjLn83OjE0oX0jUCVcGovIHLeO7OUZB) 
+#### *by Ricardo Green*
 
 Here's what I liked:
 - Misconfigured IAM is a huge risk
@@ -103,10 +123,10 @@ Here's what I liked:
 - Use required tags as part of drift strategy
 - Chaos engineering has benefits for security as well
 
----
 
-## [Open Source Container Security: A Brief Overview](https://drive.google.com/open?id=1EZkw1l4WUXMvl1WQ9Qnf1L6kW9_gBWlO) 
-### *by Jessica Repka*
+
+### [Open Source Container Security: A Brief Overview](https://drive.google.com/open?id=1EZkw1l4WUXMvl1WQ9Qnf1L6kW9_gBWlO) 
+#### *by Jessica Repka*
 
 This one was honestly over my head but I knew that many of my colleagues would like it.
 
@@ -116,17 +136,5 @@ Here's what I liked:
 
 The DevOpsDays series of conferences are a great (and cheap!) way to quickly get up to speed on current best practices. You should definitely try to attend one of your [local events.](https://devopsdays.org/)
 
----
 
-## Build and Monitor Machine Learning Services in Kubernetes 
-### *by Kirk Kaiser*
-
-Here's what I liked:
-
---- 
-
-## Intelligent Deployment Pipelines 
-### *by Martez Reed*
-
-Here's what I liked:
 
