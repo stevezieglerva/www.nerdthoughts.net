@@ -18,7 +18,8 @@ I attended the 2019 DevOpsDays Raleigh and really enjoyed it. Here are my take-a
 	 
 	 
 
-## [Know Your Numbers](https://drive.google.com/open?id=18-OFq--aD-4dswf73zuY-ngWGlP5LQib) by Anne Hungate
+## [Know Your Numbers](https://drive.google.com/open?id=18-OFq--aD-4dswf73zuY-ngWGlP5LQib) 
+### *by Anne Hungate*
 
 I had seen Anne preview this talk at the local meetup but really enjoyed it a second time. 
 
@@ -28,7 +29,8 @@ Here's what I liked:
 - "Right people working on the right projects at the right time." to make sure your best people are working on the most important projects.
 - Her belief that like the retail apocolypse, there is a digital apoloclypse for companies not ready to move fast with DevOps.
 
-## [Expand Your DevOps Practice](https://drive.google.com/open?id=1qkMp7U8IKXWtWSHiwMhVyvY1c_VpBmne) by Marguerite Bryan
+## [Expand Your DevOps Practice](https://drive.google.com/open?id=1qkMp7U8IKXWtWSHiwMhVyvY1c_VpBmne) 
+### *by Marguerite Bryan*
 
 I attended this workshop without really knowing what it was about. It turned out to be a nice workshop on value streams and being Lean.
 
