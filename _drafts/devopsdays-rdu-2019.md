@@ -16,7 +16,7 @@ I attended the 2019 DevOpsDays Raleigh and really enjoyed it. Here are my take-a
 - VPs don't get much respect as these events. Lots of jokes at our expense. :) 
 
 	 
-	 
+---
 
 ## [Know Your Numbers](https://drive.google.com/open?id=18-OFq--aD-4dswf73zuY-ngWGlP5LQib) 
 ### *by Anne Hungate*
@@ -29,6 +29,7 @@ Here's what I liked:
 - "Right people working on the right projects at the right time." to make sure your best people are working on the most important projects.
 - Her belief that like the retail apocolypse, there is a digital apoloclypse for companies not ready to move fast with DevOps.
 
+---
 ## [Expand Your DevOps Practice](https://drive.google.com/open?id=1qkMp7U8IKXWtWSHiwMhVyvY1c_VpBmne) 
 ### *by Marguerite Bryan*
 
@@ -54,9 +55,12 @@ will achieve an increase in sales of the premium subscription service.
 
 We'll know this is true when 25% of the new customers have purchased the premium service.
 ```
+  
 
 
-## [Avoiding the Infamous DevOps Team!](https://drive.google.com/open?id=1xKHChHBRYo5jM1adWgTOjk9usuyo23H9) by John Esser
+
+## [Avoiding the Infamous DevOps Team!](https://drive.google.com/open?id=1xKHChHBRYo5jM1adWgTOjk9usuyo23H9) 
+### *by John Esser*
 
 This talk focused on when to bring any separate innovative DevOps teams back into the main business engine of standard work. I think some people missed this main point and focused too much on the somewhat controversial topic of what *not* to name the team.
 
@@ -64,6 +68,7 @@ Here's what I liked:
 - His stories of early DevOps conferences
 - The advice to not let innovation teams exist separately for too long before bringing them back into the main business engine.
 
+---
 
 ## [Just Enough Feature Flagging](https://drive.google.com/open?id=1m6pSIkTsifA5SaABbWhDGCCEQ7qf_zK8) by Dave Rogers
 
@@ -71,7 +76,7 @@ Here's what I liked:
 - Very interactice session with the Story Time breaks to discuss deployment issues and feature flags with your seat neighbor
 - Last few slides summarizing common mistakes and good ideas
 
-
+---
 
 
 ## [DevSecOps: How to level up your organization’s security expertise](https://drive.google.com/open?id=19JNUB4xAL3RCmacNQdALot0dFGeAvu69) by Ann Marie Fred
@@ -82,6 +87,7 @@ Here's what I liked:
 - Focus on active hacks vs. theorectical hacks! 
 - IBM open-sourced their [npm_audit_fixer](https://github.com/IBM/npm_audit_fixer) tool
 
+---
 
 ## [Did Netflix Inadvertently Figure Out How to Better Secure the Cloud?](https://drive.google.com/open?id=1LVjLn83OjE0oX0jUCVcGovIHLeO7OUZB) by Ricardo Green
 
