@@ -6,7 +6,7 @@ description: Take-aways from the conference
 ![My conference badge](/assets/img/devopsday-rdu-badge.jpg)
 
 
-I attended the 2019 DevOpsDays Raleigh and really enjoyed it. Here are my take-aways and highlights from my favorite talks. The live-stream video of talks are on the [DevOpsDays Raleigh YouTube channel.](https://www.youtube.com/channel/UC4Xs0UbAdDaMRmStzhSsSag) and the individual talk videos should be up by mid-November.
+I attended the 2019 DevOpsDays Raleigh and really enjoyed it. Here are my take-aways and highlights from my favorite talks. The live-stream video of talks are on the [DevOpsDays Raleigh YouTube channel](https://www.youtube.com/channel/UC4Xs0UbAdDaMRmStzhSsSag) and the individual talk videos should be up by mid-November.
 
 
 ## 1. General Thoughts
@@ -46,8 +46,8 @@ I attended this workshop without really knowing what it was about. It turned out
 
 Here's what I liked:
 - DevOps is about culture and lean processes as much as technology
-- A fast DevOps approach and pipeline will be useless if ideas/projects are approved on an annual budgeting cycle and a Change Control Board only meets quartlerly
-- The We Believe hypothesis template. I've seen this before in design thinking workshops and it was nice to see someone else recommend it. This is a great simple way to plan a test of a hyptohesis. 
+- A fast DevOps approach and pipeline will be useless if ideas/projects are approved on an annual budgeting cycle or a Change Control Board only meets quartlerly
+- The We Believe hypothesis template. I've seen this before in design thinking workshops and it was nice to see someone else recommend it. This is a great simple way to test a hyptohesis. 
 
 ```
 We believe that: [doing this]
@@ -71,7 +71,7 @@ We'll know this is true when 25% of the new customers have purchased the premium
 ### [Avoiding the Infamous DevOps Team!](https://drive.google.com/open?id=1xKHChHBRYo5jM1adWgTOjk9usuyo23H9) 
 #### *by John Esser*
 
-This talk focused on when to bring any separate innovative DevOps teams back into the main business engine of standard work. I think some people missed this main point and focused too much on the somewhat controversial topic of what *not* to name the team.
+This talk focused on when to bring any separate, innovative DevOps teams back into the main business engine of standard work. I think some people missed this main point and focused too much on the somewhat controversial topic of what *not* to name the team.
 
 Here's what I liked:
 - His stories of early DevOps conferences
@@ -99,7 +99,6 @@ I think confidently deploying and monitoring AI/ML services will become a huge f
 
 
 
-
 Here's what I liked:
 - Description of the differences between AI/ML work and workloads from traditional application development
 - Good list of deployment tools:
@@ -118,7 +117,7 @@ Here's what I liked:
 - Intelligent checks:
     - Are the services and servers available before we deploy?
     - Are the required security groups available (in case another group is responsible for that)?
-    - Any open there any critical network outages that should make us pause the deployment?
+    - Any there any open network outage tickets that should make us pause the deployment?
     - Is there really high traffic on the application now?
     - Has there been any major infrastructure drift?
 
@@ -144,7 +143,7 @@ Here's what I liked:
 
 Here's what I liked:
 - Misconfigured IAM is a huge risk
-- Who gets alerted if ports opened? S3 buckets made public?
+- Who gets alerted if ports are opened? S3 buckets made public?
 - Use drift detection to help automate remeadiation
 - Use required tags as part of drift strategy
 - Chaos engineering has benefits for security as well
