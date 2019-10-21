@@ -22,6 +22,10 @@ I attended the 2019 DevOpsDays Raleigh and really enjoyed it. Here are my take-a
 ---
 
 ## Culture
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/statedeptdss/38303584095/in/photolist-21mKT5k-y4uiCp-WaP4RR-2bnM6uj-25pJjm2-p55gcj-4jyDtK-fKyS7T-oy97z2-hKR3sp-osTcFs-4jyD9F-dhXDJb-JpxrV-i3ayvZ-oDvPEH-hRMWRK-i8oaPb-4jyEjp-i4XbBF-ov75pe-4jCCdw-hQE1pF-i6bQSN-4jyBvZ-i8bZHa-hSkP8W-4jyF6Z-oeXSoi-nvQTfG-4jCHBS-4jyndM-odacp5-4jCFZC-4jyDFM-hPkVHB-4jyDMk-4jykRK-4jCHu1-i6Cv7c-i5hiET-i2FuKw-4jCHEJ-ZYmb9X-4jCH91-hTvwqm-otUENK-i7iDNU-i93Cw2-hRJF49" title="DSS at UNGA 72 - Dignitary Protection Operations Center"><img src="https://live.staticflickr.com/4640/38303584095_39678a621f_w.jpg" width="400" height="267" alt="DSS at UNGA 72 - Dignitary Protection Operations Center"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+
+
 ### [Know Your Numbers](https://drive.google.com/open?id=18-OFq--aD-4dswf73zuY-ngWGlP5LQib) 
 #### *by Anne Hungate*
 
@@ -78,7 +82,7 @@ Here's what I liked:
 
 ## Tech
 
-![Rack of servers](/assets/img/17330026471_b5dc440647_o.jpg)
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/132131207@N04/17330026471/in/photolist-spoV6R-aRYXXc-s7RB83-rsqF2h-eQgxro-ouzjqm-fvcxxG-6Gox4c-SZLXUM-hHZuQG-qr211X-ownYHo-od8YM4-out3wb-4w35YY-p6rhz2-od8GwN-2ar49SH-ovDZwT-oeXex4-org9iJ-qFb93y-qqUAew-38fXsC-23PGNga-ouBKqs-PuLd1-owfZyh-ouCaGb-ovqib8-bZKEsd-occmfx-ayaKv6-tnWvqJ-odoWeh-otAGec-ow8DjR-rptR8Q-qTFBQ4-oeSmec-otJFRW-ouA4B9-JecJz7-PuLdQ-gTZgQm-rw9SYe-6Q3Pf-q15wd1-to2e9o-jV2ucn" title="server"><img src="https://live.staticflickr.com/7658/17330026471_b5dc440647_o.jpg" width="273" height="185" alt="server"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 ### [Just Enough Feature Flagging](https://drive.google.com/open?id=1m6pSIkTsifA5SaABbWhDGCCEQ7qf_zK8) 
 #### *by Dave Rogers*
@@ -120,7 +124,7 @@ Here's what I liked:
 ---
 
 ## Security
-![Vault lock](/assets/img/48631169337_567d5e4784_w.jpg)
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/140641142@N05/48631169337/in/photolist-ow72no-ouj7hA-oeGwMA-oeRrDa-oeHP2P-oeQ9En-ow8EAn-oy1Cut-2h6nsrq-2h6jSS1-2h6nsqy-2h6mGS5-2h6nsoj-2h6mGRo-2h6nsmR-2h6mGSv-2h6jSNd-2h6nskd-2h6nsmq-2h6nsi9-2h6mGM5-2h6mGNn-2h6jSKH-2h6nsjw-2h6jSJA-2h6nsgA-2h6mGL8-2h6nshh-2h6jSHP-odcBWN-ovBqqi-ovY8dj-oewgDR-xehw1E-oeKEQo-oxYtAa-wZ6prf-ow5mVY-oeV1Mb-wZ9aP1-oeMeyX-owcF19-ovH3zw-owdHj8-oeKzzz-xqszpg-xjQk33-xfi5oQ-oePiLd-otB5ze" title="Vault"><img src="https://live.staticflickr.com/65535/48631169337_567d5e4784_n.jpg" width="320" height="240" alt="Vault"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 ### [DevSecOps: How to level up your organization’s security expertise](https://drive.google.com/open?id=19JNUB4xAL3RCmacNQdALot0dFGeAvu69) 
 #### by Ann Marie Fred
