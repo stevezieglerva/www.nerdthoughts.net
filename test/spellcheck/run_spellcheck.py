@@ -12,8 +12,10 @@ import datetime
 class SubmissionSpellChecker():
 	def __init__(self):
 		self.spell = SpellChecker()
-		self.spell.word_frequency.load_text_file("all_mds.txt")
-		ignore_words = ["aws", "orig", "equifaxsecurity", "npm"]
+		ignore_words = ["aws", "orig", "equifaxsecurity", "npm", "devs", "microservices", 
+						"lambda", "devops", "html", "nbsp", "txt", "blog", "shoup", "elasticsearch", "jez",  "humble", "forsgren", "devopsdays",
+						"youtube", "jpg", "flickr", "async", "kubernetes", "tensorrt", "pachyderm", "nvidia", "martez", "outages", "kubeflow",
+						"charset", "utf", "vps", "rdu", "devopsday", "embedr"]
 		for word in ignore_words:
 			self.spell.word_frequency.add(word)
 
@@ -50,10 +52,10 @@ def read_markdown_filtered_file(filename):
 
 		for line in file.readlines():
 			evaluate_line = line
-			if "```" in evaluate_line and not in_block:
+			if ("```" in evaluate_line or "---" in evaluate_line) and not in_block:
 				in_block = True
 				evaluate_line = ""
-			if "```" in evaluate_line and in_block:
+			if ("```" in evaluate_line  or "---" in evaluate_line)and in_block:
 				in_block = False
 				evaluate_line = ""
 			if in_block:
@@ -63,7 +65,10 @@ def read_markdown_filtered_file(filename):
 
 	lowered_text = [i.lower() for i  in lines]
 	no_links =[re.sub("http[^ ]+", "", i) for i  in lowered_text]
-	filtered_text = [re.sub("[^a-zA-Z]", " ", i) for i in no_links]
+	filtered_text = [re.sub("<a[^>]+>", " ", i) for i in no_links]
+	filtered_text = [re.sub("[^a-zA-Z]", " ", i) for i in filtered_text]
+
+
 	return filtered_text
 
 

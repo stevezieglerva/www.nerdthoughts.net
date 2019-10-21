@@ -11,7 +11,7 @@ I attended the 2019 DevOpsDays Raleigh and really enjoyed it. Here are my take-a
 
 ## 1. General Thoughts
 
-![DevOpsDays Raliegh logo with Wright brothers plane](/assets/img/Raleigh-NC-DevOps-Logo.jpg)
+![DevOpsDays Raleigh logo with Wright brothers plane](/assets/img/Raleigh-NC-DevOps-Logo.jpg)
 
 - Don't forget culture during your transformation
 - Don't focus on finding a *single* root cause for an incident. There's rarely a single event.
@@ -88,19 +88,20 @@ Here's what I liked:
 #### *by Dave Rogers*
 
 Here's what I liked:
-- Very interactice session with the Story Time breaks to discuss deployment issues and feature flags with your seat neighbor
+- Very interactive session with the Story Time breaks to discuss deployment issues and feature flags with your seat neighbor
 - Last few slides summarizing common mistakes and good ideas
-
 
 
 
 ### [Build and Monitor Machine Learning Services in Kubernetes](https://drive.google.com/open?id=10n2aGAXUhDhjq-mZRXnd9GgQZDi5HWyV)
 #### *by Kirk Kaiser*
-I think confidently deploying and monitoring AI/ML services will become a huge focus area for organizations as they want the value of data science but with the deployment and testing rigors of engineering.
+I think confidently deploying and monitoring AI/ML services will become a huge focus area for organizations as they want the value of data science but with the deployment and testing rigor of engineering.
+
+
 
 
 Here's what I liked:
-- Description of the differences between AI/ML work and workloads from traditional appdev
+- Description of the differences between AI/ML work and workloads from traditional application development
 - Good list of deployment tools:
     - Kubeflow - ML toolkit for kubernetes
     - TensorRT - Inference server

@@ -35,21 +35,21 @@ I really like how this talk focuses a lot of the business drivers for Chik-fil-a
 <hr/>
 
 # Pragmatic Microservices
-Given his resume, Randy Shoup has a lot of good talks describing his expriences with distributed architectures. He, like many others, recommends building the monolith first. Distributed systems come with their own, complex problems.
+Given his resume, Randy Shoup has a lot of good talks describing his experiences with distributed architectures. He, like many others, recommends building the monolith first. Distributed systems come with their own, complex problems.
 
 [![Pragmatic Microservices](https://i.ytimg.com/vi/9vS7TbgirgY/hqdefault.jpg)](https://youtu.be/9vS7TbgirgY)
 <hr/>
 
 # Stream All Things - Patterns of Modern Data Integration
-I think streams are the future for intgrations, especially pub/sub. They are fast, can handle high volume, and let you play back history. AWS even uses streams for some of Lamba events from other services (like Dynamo DB). You can also use streams to queue up fast data arrivals for a slower downstream ingestion (like to Elasticsearch). 
+I think streams are the future for integrations, especially pub/sub. They are fast, can handle high volume, and let you play back history. AWS even uses streams for some of Lambda events from other services (like Dynamo DB). You can also use streams to queue up fast data arrivals for a slower downstream ingestion (like to Elasticsearch). 
 
 [![Stream All Things - Patterns of Modern Data Integration](https://i.ytimg.com/vi/Hjae0Cw9oew/hqdefault.jpg)](https://youtu.be/Hjae0Cw9oew)
 <hr/>
 
-# Robust Anamoly Detection For Real User Monitoring Data
-I loved this talk, especially the practical discussions of what counts as an anamoly given business and operating conditions. I really like how they analyzed possible root causes of anamolies of their  metrics and sent that information to Ops along with the alerts to help with resolution. 
+# Robust anomaly Detection For Real User Monitoring Data
+I loved this talk, especially the practical discussions of what counts as an anomaly given business and operating conditions. I really like how they analyzed possible root causes of anomalies of their  metrics and sent that information to Ops along with the alerts to help with resolution. 
 
-[![Robust Anamoly Detection For Real User Monitoring Data](https://i.ytimg.com/vi/0PtehdUL-38/hqdefault.jpg)](https://youtu.be/0PtehdUL-38)
+[![Robust anomaly Detection For Real User Monitoring Data](https://i.ytimg.com/vi/0PtehdUL-38/hqdefault.jpg)](https://youtu.be/0PtehdUL-38)
 <hr/>
 
 # What I Learned From 4 Years of Researching the Crap Out of DevOps
