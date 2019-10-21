@@ -10,6 +10,9 @@ I attended the 2019 DevOpsDays Raleigh and really enjoyed it. Here are my take-a
 
 
 ## General Thoughts
+
+![DevOpsDays Raliegh logo with Wright brothers plane](/assets/img/Raleigh-NC-DevOps-Logo.jpg)
+
 - Don't forget culture during your transformation
 - Don't focus on finding a *single* root cause for an incident. There's rarely a single event.
 - Failures are great opportunities to learn
@@ -117,6 +120,7 @@ Here's what I liked:
 ---
 
 ## Security
+![Vault lock](/assets/img/48631169337_567d5e4784_w.jpg)
 
 ### [DevSecOps: How to level up your organization’s security expertise](https://drive.google.com/open?id=19JNUB4xAL3RCmacNQdALot0dFGeAvu69) 
 #### by Ann Marie Fred
