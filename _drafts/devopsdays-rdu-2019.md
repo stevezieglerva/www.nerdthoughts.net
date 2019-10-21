@@ -87,15 +87,26 @@ Here's what I liked:
 
 ### Build and Monitor Machine Learning Services in Kubernetes 
 #### *by Kirk Kaiser*
+I think confidently deploying and monitoring AI/ML services will become a huge focus area for organizations as they want the value of data science but with the deployment and testing rigors of engineering.
+
 
 Here's what I liked:
+- Description of the differences between AI/ML work and workloads from traditional appdev
+- Good list of deployment tools (Kubeflow, TensorRT, Pachyderm)
 
 
 
-### Intelligent Deployment Pipelines 
+### [Intelligent Deployment Pipelines](https://drive.google.com/open?id=1Ykx7VWBOtOcTbGCeiErgAO2XhzHHCVrg) 
 #### *by Martez Reed*
 
 Here's what I liked:
+- Smart focus on environmental awareness to determine if it's a good time to deploy
+- Intelligent checks:
+    - Are the services and servers available before we deploy?
+    - Are the required security groups available (in case another group is responsible for that)?
+    - Any open there any critical network outages that should make us pause the deployment?
+    - Is there really high traffic on the application now?
+    - Has there been any major infrastructure drift?
 
 ---
 
@@ -104,7 +115,7 @@ Here's what I liked:
 ### [DevSecOps: How to level up your organization’s security expertise](https://drive.google.com/open?id=19JNUB4xAL3RCmacNQdALot0dFGeAvu69) 
 #### by Ann Marie Fred
 
-This was the start of a series of security-focused talks. I enjoyed all of them, but this was my favorite.
+This was the start of a series of security-focused talks. I enjoyed all of them, but this was my favorite.  
 
 Here's what I liked:
 - Great summary slide of tradition IT security vs. DevOps security
