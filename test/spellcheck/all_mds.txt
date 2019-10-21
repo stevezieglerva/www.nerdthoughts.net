@@ -1,0 +1,1198 @@
+
+
+
+| Notify start
+| Get master branch
+| Copy to Staging
+| Build (and check links)
+├───── On Staging: 508 test
+├───── Run Ghost Inspector
+├───── Copy to Prod
+| Notify complete
+
+---
+layout: post
+tags: continuous delivery
+---
+
+
+- shard big long updates into sections to avoid long locking
+- split DB updates into steps
+- delete columns later with maintenance steps
+- delete column stop reading, but still writing
+---
+layout: post
+title: DevOpsDay Raleigh 2019
+description: Take-aways from the conference
+---
+![My conference badge](/assets/img/devopsday-rdu-badge.jpg)
+
+
+I attended the 2019 DevOpsDays Raleigh and really enjoyed it. Here are my take-aways and highlights from my favorite talks. The live-stream video of talks are on the [DevOpsDays Raleigh YouTube channel.](https://www.youtube.com/channel/UC4Xs0UbAdDaMRmStzhSsSag) and the individual talk videos should be up by mid-November.
+
+
+## 1. General Thoughts
+
+![DevOpsDays Raliegh logo with Wright brothers plane](/assets/img/Raleigh-NC-DevOps-Logo.jpg)
+
+- Don't forget culture during your transformation
+- Don't focus on finding a *single* root cause for an incident. There's rarely a single event.
+- Failures are great opportunities to learn
+- VPs don't get much respect as these events. Lots of jokes at our expense. :) 
+
+	 
+---
+
+## 2. Culture
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/statedeptdss/38303584095/in/photolist-21mKT5k-y4uiCp-WaP4RR-2bnM6uj-25pJjm2-p55gcj-4jyDtK-fKyS7T-oy97z2-hKR3sp-osTcFs-4jyD9F-dhXDJb-JpxrV-i3ayvZ-oDvPEH-hRMWRK-i8oaPb-4jyEjp-i4XbBF-ov75pe-4jCCdw-hQE1pF-i6bQSN-4jyBvZ-i8bZHa-hSkP8W-4jyF6Z-oeXSoi-nvQTfG-4jCHBS-4jyndM-odacp5-4jCFZC-4jyDFM-hPkVHB-4jyDMk-4jykRK-4jCHu1-i6Cv7c-i5hiET-i2FuKw-4jCHEJ-ZYmb9X-4jCH91-hTvwqm-otUENK-i7iDNU-i93Cw2-hRJF49" title="DSS at UNGA 72 - Dignitary Protection Operations Center"><img src="https://live.staticflickr.com/4640/38303584095_39678a621f_w.jpg" width="400" height="267" alt="DSS at UNGA 72 - Dignitary Protection Operations Center"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+
+
+### [Know Your Numbers](https://drive.google.com/open?id=18-OFq--aD-4dswf73zuY-ngWGlP5LQib) 
+#### *by Anne Hungate*
+
+I had seen Anne preview this talk at the local meetup but really enjoyed it a second time. 
+
+Here's what I liked:
+
+- Her list of the reasons why companies execute projects
+- "Right people working on the right projects at the right time." to make sure your best people are working on the most important projects.
+- Her belief that like the retail apocolypse, there is a digital apoloclypse for companies not ready to move fast with DevOps.
+
+
+
+### [Expand Your DevOps Practice](https://drive.google.com/open?id=1qkMp7U8IKXWtWSHiwMhVyvY1c_VpBmne) 
+#### *by Marguerite Bryan*
+
+I attended this workshop without really knowing what it was about. It turned out to be a nice workshop on value streams and being Lean.
+
+Here's what I liked:
+- DevOps is about culture and lean processes as much as technology
+- A fast DevOps approach and pipeline will be useless if ideas/projects are approved on an annual budgeting cycle and a Change Control Board only meets quartlerly
+- The We Believe hypothesis template. I've seen this before in design thinking workshops and it was nice to see someone else recommend it. This is a great simple way to plan a test of a hyptohesis. 
+
+```
+We believe that: [doing this]
+for: [target users/people]
+will achieve: [this outcome]
+We’ll know this is true when:
+[this condition]
+```
+
+```
+We believe that offering $25 gift cards to sign up new free-tier customers
+for existing customers
+will achieve an increase in sales of the premium subscription service.
+
+We'll know this is true when 25% of the new customers have purchased the premium service.
+```
+  
+
+
+
+### [Avoiding the Infamous DevOps Team!](https://drive.google.com/open?id=1xKHChHBRYo5jM1adWgTOjk9usuyo23H9) 
+#### *by John Esser*
+
+This talk focused on when to bring any separate innovative DevOps teams back into the main business engine of standard work. I think some people missed this main point and focused too much on the somewhat controversial topic of what *not* to name the team.
+
+Here's what I liked:
+- His stories of early DevOps conferences
+- The advice to not let innovation teams exist separately for too long before bringing them back into the main business engine.
+
+---
+
+
+## 3. Tech
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/132131207@N04/17330026471/in/photolist-spoV6R-aRYXXc-s7RB83-rsqF2h-eQgxro-ouzjqm-fvcxxG-6Gox4c-SZLXUM-hHZuQG-qr211X-ownYHo-od8YM4-out3wb-4w35YY-p6rhz2-od8GwN-2ar49SH-ovDZwT-oeXex4-org9iJ-qFb93y-qqUAew-38fXsC-23PGNga-ouBKqs-PuLd1-owfZyh-ouCaGb-ovqib8-bZKEsd-occmfx-ayaKv6-tnWvqJ-odoWeh-otAGec-ow8DjR-rptR8Q-qTFBQ4-oeSmec-otJFRW-ouA4B9-JecJz7-PuLdQ-gTZgQm-rw9SYe-6Q3Pf-q15wd1-to2e9o-jV2ucn" title="server"><img src="https://live.staticflickr.com/7658/17330026471_b5dc440647_o.jpg" width="273" height="185" alt="server"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+### [Just Enough Feature Flagging](https://drive.google.com/open?id=1m6pSIkTsifA5SaABbWhDGCCEQ7qf_zK8) 
+#### *by Dave Rogers*
+
+Here's what I liked:
+- Very interactice session with the Story Time breaks to discuss deployment issues and feature flags with your seat neighbor
+- Last few slides summarizing common mistakes and good ideas
+
+
+
+
+### [Build and Monitor Machine Learning Services in Kubernetes](https://drive.google.com/open?id=10n2aGAXUhDhjq-mZRXnd9GgQZDi5HWyV)
+#### *by Kirk Kaiser*
+I think confidently deploying and monitoring AI/ML services will become a huge focus area for organizations as they want the value of data science but with the deployment and testing rigors of engineering.
+
+
+Here's what I liked:
+- Description of the differences between AI/ML work and workloads from traditional appdev
+- Good list of deployment tools:
+    - Kubeflow - ML toolkit for kubernetes
+    - TensorRT - Inference server
+    - Pachyderm - Version control for ML data and pipelines
+    - NVIDIA container registry - registry of GPU and ML containers
+
+
+
+### [Intelligent Deployment Pipelines](https://drive.google.com/open?id=1Ykx7VWBOtOcTbGCeiErgAO2XhzHHCVrg) 
+#### *by Martez Reed*
+
+Here's what I liked:
+- Smart focus on environmental awareness to determine if it's a good time to deploy
+- Intelligent checks:
+    - Are the services and servers available before we deploy?
+    - Are the required security groups available (in case another group is responsible for that)?
+    - Any open there any critical network outages that should make us pause the deployment?
+    - Is there really high traffic on the application now?
+    - Has there been any major infrastructure drift?
+
+---
+
+## 4. Security
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/140641142@N05/48631169337/in/photolist-ow72no-ouj7hA-oeGwMA-oeRrDa-oeHP2P-oeQ9En-ow8EAn-oy1Cut-2h6nsrq-2h6jSS1-2h6nsqy-2h6mGS5-2h6nsoj-2h6mGRo-2h6nsmR-2h6mGSv-2h6jSNd-2h6nskd-2h6nsmq-2h6nsi9-2h6mGM5-2h6mGNn-2h6jSKH-2h6nsjw-2h6jSJA-2h6nsgA-2h6mGL8-2h6nshh-2h6jSHP-odcBWN-ovBqqi-ovY8dj-oewgDR-xehw1E-oeKEQo-oxYtAa-wZ6prf-ow5mVY-oeV1Mb-wZ9aP1-oeMeyX-owcF19-ovH3zw-owdHj8-oeKzzz-xqszpg-xjQk33-xfi5oQ-oePiLd-otB5ze" title="Vault"><img src="https://live.staticflickr.com/65535/48631169337_567d5e4784_n.jpg" width="320" height="240" alt="Vault"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+### [DevSecOps: How to level up your organization’s security expertise](https://drive.google.com/open?id=19JNUB4xAL3RCmacNQdALot0dFGeAvu69) 
+#### by Ann Marie Fred
+
+This was the start of a series of security-focused talks. I enjoyed all of them, but this was my favorite.  
+
+Here's what I liked:
+- Great summary slide of tradition IT security vs. DevOps security
+- Focus on active hacks vs. theorectical hacks! 
+- IBM open-sourced their [npm_audit_fixer](https://github.com/IBM/npm_audit_fixer) tool
+
+
+
+### [Did Netflix Inadvertently Figure Out How to Better Secure the Cloud?](https://drive.google.com/open?id=1LVjLn83OjE0oX0jUCVcGovIHLeO7OUZB) 
+#### *by Ricardo Green*
+
+Here's what I liked:
+- Misconfigured IAM is a huge risk
+- Who gets alerted if ports opened? S3 buckets made public?
+- Use drift detection to help automate remeadiation
+- Use required tags as part of drift strategy
+- Chaos engineering has benefits for security as well
+
+
+
+### [Open Source Container Security: A Brief Overview](https://drive.google.com/open?id=1EZkw1l4WUXMvl1WQ9Qnf1L6kW9_gBWlO) 
+#### *by Jessica Repka*
+
+This one was honestly over my head but I knew that many of my colleagues would like it.
+
+Here's what I liked:
+- Good overview of Anchore Engine (scan images for CVEs and apply policies), Falco (image deployment prevention), and Sysdig Inspect (capture logs for forensics)
+- Jenkins plug-in information
+
+The DevOpsDays series of conferences are a great (and cheap!) way to quickly get up to speed on current best practices. You should definitely try to attend one of your [local events.](https://devopsdays.org/)
+
+
+
+---
+layout: post
+title: Modern Architecture Conference Talks
+description: List of conference talks on modern architecture considerations
+---
+
+A senior developer in my engineering group expressed interest in leading our next modernization project. It got me thinking about some modern architecture ideas that a lead architect should understand. While you might not use all of these techniques, you should have an understanding of them. 
+
+I love conference talks as a quick and easy way to get introduced to concepts. Here are some of my favorites.
+
+
+# Many Meanings of Event-Driven Architectures
+[![Many Meanings of Event-Driven Architectures](https://i.ytimg.com/vi/STKCRSUsyP0/hqdefault.jpg)](https://youtu.be/STKCRSUsyP0)
+
+You can never go wrong with Martin Fowler. He frequently reminds us that many of these ideas are not actually new, but just re-packaged with modern tooling. I love his point that most developers have used a fully event-based data source without even knowing it.
+
+<hr/>
+
+
+
+
+
+# Microservices
+[![Microservices](https://i.ytimg.com/vi/wgdBVIX9ifA/hqdefault.jpg)](https://youtu.be/wgdBVIX9ifA)
+
+https://youtu.be/wgdBVIX9ifA
+
+<hr/>
+
+# 6 Million Registrations in 30 Days
+[![6 Million Registrations in 30 Days](https://i.ytimg.com/vi/9tm0LsNBbzs/hqdefault.jpg)](https://youtu.be/9tm0LsNBbzs)
+
+I really like how this talk focuses a lot of the business drivers for Chik-fil-a's mobile architecture. It's really driven home with the pictures of the kitchens how their are fed with info on mobile orders to anticipate demand.
+
+<hr/>
+
+# Pragmatic Microservices
+Given his resume, Randy Shoup has a lot of good talks describing his expriences with distributed architectures. He, like many others, recommends building the monolith first. Distributed systems come with their own, complex problems.
+
+[![Pragmatic Microservices](https://i.ytimg.com/vi/9vS7TbgirgY/hqdefault.jpg)](https://youtu.be/9vS7TbgirgY)
+<hr/>
+
+# Stream All Things - Patterns of Modern Data Integration
+I think streams are the future for intgrations, especially pub/sub. They are fast, can handle high volume, and let you play back history. AWS even uses streams for some of Lamba events from other services (like Dynamo DB). You can also use streams to queue up fast data arrivals for a slower downstream ingestion (like to Elasticsearch). 
+
+[![Stream All Things - Patterns of Modern Data Integration](https://i.ytimg.com/vi/Hjae0Cw9oew/hqdefault.jpg)](https://youtu.be/Hjae0Cw9oew)
+<hr/>
+
+# Robust Anamoly Detection For Real User Monitoring Data
+I loved this talk, especially the practical discussions of what counts as an anamoly given business and operating conditions. I really like how they analyzed possible root causes of anamolies of their  metrics and sent that information to Ops along with the alerts to help with resolution. 
+
+[![Robust Anamoly Detection For Real User Monitoring Data](https://i.ytimg.com/vi/0PtehdUL-38/hqdefault.jpg)](https://youtu.be/0PtehdUL-38)
+<hr/>
+
+# What I Learned From 4 Years of Researching the Crap Out of DevOps
+Jez Humble and Dr Nicole Forsgren
+https://pbell.wistia.com/medias/xlxb0awlp4?wtime=0
+
+{% include image.html name="jezhumbledevops" atl="Jez Humble video thumbnail" caption="" %}
+
+
+
+You are not Google
+https://blog.bradfieldcs.com/you-are-not-google-84912cf44afb 
+
+find pragmatic orielly of conference talks- Nobody should "touch" prod. Should all be automated updates
+- Devs should have to do shifts on Ops
+- Devs own fixing the test
+- No staging
+- The Guardian
+	- Design and review on local
+	- Different pipeline based on risk
+- Little bugs, but frustrating bugs, get fixed on Saturdays off hours by developers because it is so easy and safe to deploy
+- Earnest 
+	- Blameless postportums for incidents---
+layout: post
+tags: elasticsearch
+---
+---
+layout: post
+title: Hello World
+description: My first blog post
+permalink: /2013/01/hello-world.html
+date: '2013-01-02T00:37:00.002-05:00'
+author: Stephen Ziegler
+tags: 
+modified_time: '2016-01-28T09:30:06.334-05:00'
+blogger_id: tag:blogger.com,1999:blog-1727955271917225446.post-619781678674195822
+blogger_orig_url: http://www.nerdthoughts.net/2013/01/hello-world.html
+---
+
+It was a goal to start a blog during my Christmas break so I'm getting in under the wire.&nbsp; I've been meaning to do it for a while but [Scott Hanselman's post](http://www.hanselman.com/blog/YourWordsAreWasted.aspx) inspired me to finally do it. Of course Scott recommends getting my own server and domain but I don't have time for that.&nbsp; I've got a few topics mapped out and hope to post once a month.---
+layout: post
+title: Yeah, we're Agile.
+description: Comparision of "doing agile" vs. "being agile"
+permalink: /2015/02/yeah-we-agile.html
+date: '2015-02-06T07:43:00.000-05:00'
+permalink: /2015/02/yeah-we-agile.html
+author: Stephen Ziegler
+tags:
+- work
+- agile
+modified_time: '2016-11-26T10:17:43.568-05:00'
+thumbnail: https://4.bp.blogspot.com/-WbMs1KwHHeE/VNSwdj9pADI/AAAAAAAAhAM/DC1KE9Jojxk/s72-c/story%2Bmap.png
+blogger_id: tag:blogger.com,1999:blog-1727955271917225446.post-5219558099692532487
+blogger_orig_url: http://www.nerdthoughts.net/2015/02/yeah-we-agile.html
+---
+
+<div style="-webkit-composition-fill-color: rgba(130, 98, 83, 0.0980392); color: rgba(0, 0, 0, 0.701961); font-family: UICTFontTextStyleBody; text-decoration: -webkit-letterpress;"><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><a href="http://www.agilegovleaders.org/">Agile Government Leadership</a>&nbsp;recently posted the <a href="http://handbook.agilegovleaders.org/">Agile Government Handbook</a>. It's a nice primer to Agile for govvies. It tackles the first issue of describing Agile in the context of government. The <a href="http://govfresh.com/2015/02/agl-launches-agile-government-handbook/">post introducing it</a> provides a good background:</span><br /><blockquote class="tr_bq"><span style="background-color: white; font-size: 16.1499996185303px; line-height: 24.2249984741211px;"><span style="color: #b45f06; font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">"One of the recurring issues I heard, from both government employees and contractors, was that there needed to be a basic understanding of what Agile was in the context of government. There is an “Agile divide” between those who fully grok and are practicing it, and those who hear and process it only as a buzzword or passing trend or something unrelated to functions outside of technology project management."</span></span></blockquote><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><br /></span><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">More and more, when I hear people describe their Agile government work, the first things they say are:</span></div><div style="-webkit-composition-fill-color: rgba(130, 98, 83, 0.0980392); color: rgba(0, 0, 0, 0.701961); font-family: UICTFontTextStyleBody; text-decoration: -webkit-letterpress;"><ul><li><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Yeah, we're Agile. <b><span style="color: #b45f06;">We do 2 week sprints.&nbsp;</span></b></span></li><li><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Yeah, we're Agile. <span style="color: #b45f06;"><b>We have daily standups.</b></span>&nbsp;</span></li></ul></div><div style="-webkit-composition-fill-color: rgba(130, 98, 83, 0.0980392); color: rgba(0, 0, 0, 0.701961); font-family: UICTFontTextStyleBody; text-decoration: -webkit-letterpress;"><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">It makes me cringe.&nbsp;Agile in government is different. I accept that. But, I keep sensing a strict adherence to Scrum and its ceremonies instead of a true Agile mindset. Two week sprints and standups shouldn't be the first thing that comes to mind when being Agile.</span><br /><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><br /></span><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Here are the first things I'd rather hear:</span></div><div style="-webkit-composition-fill-color: rgba(130, 98, 83, 0.0980392); color: rgba(0, 0, 0, 0.701961); font-family: UICTFontTextStyleBody; text-decoration: -webkit-letterpress;"><ul><li><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Yeah, we're Agile. <b><span style="color: #b45f06;">We switched to four week sprints</span></b> because that cadence is a much better fit for our team and this project.</span></li><li><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Yeah, we're Agile. <b><span style="color: #b45f06;">The CO helped us write an Agile-friendly RFP</span></b>.</span></li><li><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Yeah, we're Agile. <b><span style="color: #b45f06;">We skip the daily standups on Fridays</span></b> because the devs requested a meeting-free day.</span></li><li><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Yeah, we're Agile. <b><span style="color: #b45f06;">We just implemented an initial vertical-slice</span></b> of the solution and realized it's got some big holes. It's back to the drawing board,&nbsp;but luckily we learned it now.</span></li><li><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Yeah, we're Agile. <b><span style="color: #b45f06;">We embedded an Office of IT rep on the team</span></b> and now she's going to reduce some of the required documentation in the SDLC.</span></li><li><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Yeah, we're Agile. <b><span style="color: #b45f06;">We embrace uncertainty.</span></b> We know we can't predict what the users really want months in advance.</span></li><li><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Yeah, we're Agile. <span style="color: #b45f06;"><b>&nbsp;Look at our story map!</b></span></span></li></ul><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><br /></span><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-WbMs1KwHHeE/VNSwdj9pADI/AAAAAAAAhAM/DC1KE9Jojxk/s1600/story%2Bmap.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><img border="0" height="239" src="https://4.bp.blogspot.com/-WbMs1KwHHeE/VNSwdj9pADI/AAAAAAAAhAM/DC1KE9Jojxk/s1600/story%2Bmap.png" width="320" /></span></a></div><div class="separator" style="clear: both; text-align: center;"><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"> by <a href="https://twitter.com/jeffpatton">Jeff Patton</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">CC: BY-NC-SA</a></span></div><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><br /></span><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><br /></span><br /><ul><li><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Yeah, we're Agile. <b><span style="color: #b45f06;">We ran a 60 person team to build a mobile data collection system for the Swedish national police using a whiteboard and post-its.</span></b></span></li></ul><div class="separator" style="clear: both; text-align: center;"><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><a href="http://4.bp.blogspot.com/-kcSYVOqPgRI/VNSx1YQOfXI/AAAAAAAAhAc/Z-ODxOfel90/s1600/Lean-from-the-Trenches_Page_15.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="226" src="https://4.bp.blogspot.com/-kcSYVOqPgRI/VNSx1YQOfXI/AAAAAAAAhAc/Z-ODxOfel90/s1600/Lean-from-the-Trenches_Page_15.jpg" width="320" /></a><a href="http://1.bp.blogspot.com/-3bAg6LSrZMs/VNSx1uL4WpI/AAAAAAAAhAY/O_CeWDwTbHE/s1600/Lean-from-the-Trenches_Page_18.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="226" src="https://1.bp.blogspot.com/-3bAg6LSrZMs/VNSx1uL4WpI/AAAAAAAAhAY/O_CeWDwTbHE/s1600/Lean-from-the-Trenches_Page_18.jpg" style="cursor: move;" width="320" /></a></span></div><div class="separator" style="clear: both; text-align: center;"><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><a href="https://www.crisp.se/file-uploads/Lean-from-the-trenches.pdf">Lean From the Trenches</a> by <a href="https://twitter.com/henrikkniberg">Henrik Kniberg</a> &nbsp;</span></div><div><span style="color: #b45f06; font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;"><b><br /></b></span></div><ul><li><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">Yeah, we're Agile. <span style="color: #b45f06;"><b>Our users like our software!</b></span></span></li></ul></div><div style="-webkit-composition-fill-color: rgba(130, 98, 83, 0.0980392); color: rgba(0, 0, 0, 0.701961); font-family: UICTFontTextStyleBody; text-decoration: -webkit-letterpress;"><br /></div>---
+layout: post
+title: Beauty of Elasticsearch Bool Query Should Clauses for Boosting
+description: Review of Elasticsearch's boolean query
+date: '2015-03-24T17:47:00.002-04:00'
+permalink: /2015/03/beauty-of-elasticsearch-bool-query.html
+author: Stephen Ziegler
+tags:
+- work
+- elasticsearch
+modified_time: '2017-01-05T00:23:11.981-05:00'
+thumbnail: https://4.bp.blogspot.com/-Ts7XVeU8nc0/WG3YLiKhv-I/AAAAAAAAhTQ/CzhtS3w2OHo7_Q8nWBV16rt7I8hl3pvKwCLcB/s72-c/email_search.png
+blogger_id: tag:blogger.com,1999:blog-1727955271917225446.post-5125240127210316901
+blogger_orig_url: http://www.nerdthoughts.net/2015/03/beauty-of-elasticsearch-bool-query.html
+---
+
+Elasticsearch's boolean query gives you an elegant way to simply provide complex boosting conditions. &nbsp;I've used boosting query fields as part of match clauses. But on their own, those clauses force a match as part of the boosting.
+
+But, the bool query lets you have set of mandatory *must* clauses along with optional *should* clauses. The should clauses boost matches when more of the clauses are true. In addition, you can increase the boost per clause.
+
+I index my Outlook email in Elasticsearch and recently started using a boosted bool query that has dramatically increased the accuracy of my searches and reduced the time to find what I'm looking for. This is actually my second attempt to index my email in the last 5 years. &nbsp;Over the years, I learned that I'm typically looking for emails:
+
+*with several AND'd keywords
+* from a specific person
+* to a specific person
+* that I've searched for and looked at before
+* with attachments&nbsp;
+* that's recent, usually within a month but at least within the last six months
+
+Here is query that matches my searching habits:
+
+
+<br />  "query": {
+
+<br />    "filtered": {
+
+<br />      "query": {
+
+<br />        "bool": {
+
+<br />            "must" : [
+
+<br />                    { "query_string": {"query": "--query-- +_type:email",&nbsp;
+
+</span>
+
+</pre>
+
+<pre>
+
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">                          "default_operator" : "AND" } }
+
+<br />                           ],
+
+<br />          "should": [
+
+<br />
+
+<br />                      { "query_string" : { "fields" : ["from"], "query" :&nbsp;
+
+</span>
+
+</pre>
+
+<pre>
+
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">                          "--query--", 
+
+<b>
+
+<span style="color: #b45f06;">"boost" : 2
+
+</span>
+
+</b>}},
+
+<br />                      { "query_string" : { "fields" : ["to"],&nbsp;
+
+</span>
+
+</pre>
+
+<pre>
+
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">                          "query" : "--query--", 
+
+<b>
+
+<span style="color: #b45f06;">"boost" : 2
+
+</span>
+
+</b>}},
+
+<br />                      { "match" : { "opened" : {"query" : "Y",&nbsp;
+
+</span>
+
+</pre>
+
+<pre>
+
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">                          
+
+<b>
+
+<span style="color: #b45f06;">"boost" : 2
+
+</span>
+
+</b>}}},
+
+<br />                      { "match" : { "attachment" : "--query--"}},
+
+<br />                      { "match" : { "dateYear" : "--query--"}},
+
+<br />                      { "match" : { "dateMonth" : "--query--"}},
+
+<br />                      { "match" : { "has_attach" : "Y"}},
+
+<br />                      { "range" : { "@timestamp" : {"gt" : "now-30d", "lt" : "now" }}},
+
+<br />                      { "range" : { "@timestamp" : {"gt" : "now-180d", "lt" : "now" }}}
+
+<br />                 ]
+
+<br />               }
+
+<br />            }
+
+<br />          }
+
+<br />       },
+
+<br />  "highlight": {
+
+<br />    "fields": {
+
+<br />      "subject": {},
+
+<br />      "body-stem": {},
+
+<br />      "attachment": {}
+
+<br />    },
+
+<br />    "fragment_size": 50,
+
+<br />    "number_of_fragments" : 1,
+
+<br />    "pre_tags": [
+
+<br />      "
+
+<em>"
+
+<br />    ],
+
+<br />    "post_tags": [
+
+<br />      "
+
+</em>"
+
+<br />    ]
+
+<br />  },
+
+<br />  "size": 20,
+
+<br />  "fields" : ["subject", "_id", "@timestamp", "has_attach", "from", "body-stem"],
+
+<br />  "sort": [
+
+<br />    {
+
+<br />      "_score": {
+
+<br />        "order": "desc",
+
+<br />        "ignore_unmapped": true
+
+<br />      }
+
+<br />    }
+
+<br />  ]
+
+<br />}
+
+</span>
+
+<br />
+
+</pre>
+
+I created a simple test client for a research project and decided to re-purpose it as a simple email search client. It's not pretty, but it's very effective for finding lost email needles in the daily onslaught of emails. I like the simplicity of just typing search words and getting very relevant results back. I had been using Kibana to find emails but got frustrated that I kept having to manually add filters when I felt the search should have just been smarter. I've been very happy with the results and impressed with the elegance of the simple, yet powerful, query syntax.
+
+
+<a href="https://4.bp.blogspot.com/-Ts7XVeU8nc0/WG3YLiKhv-I/AAAAAAAAhTQ/CzhtS3w2OHo7_Q8nWBV16rt7I8hl3pvKwCLcB/s1600/email_search.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
+
+<img border="0" height="337" src="https://4.bp.blogspot.com/-Ts7XVeU8nc0/WG3YLiKhv-I/AAAAAAAAhTQ/CzhtS3w2OHo7_Q8nWBV16rt7I8hl3pvKwCLcB/s640/email_search.png" width="640" />
+
+</a>
+
+---
+layout: post
+title: Temperature Chart To Help Kids Pick Their Clothes
+date: '2015-04-25T09:03:00.000-04:00'
+description: Simple chart to help young kids know which clothes to wear
+permalink: /2015/04/temperature-chart-to-help-kids-pick.html
+categories: [kids, design]
+modified_time: '2015-04-25T09:03:54.166-04:00'
+thumbnail: http://4.bp.blogspot.com/-blVB--56IXs/VTuHDK3axvI/AAAAAAAAhEM/YLkeXJnXlgs/s72-c/temperature%2Bexcel.png
+blogger_id: tag:blogger.com,1999:blog-1727955271917225446.post-246186317592922768
+blogger_orig_url: http://www.nerdthoughts.net/2015/04/temperature-chart-to-help-kids-pick.html
+---
+
+
+
+As we've entered spring, my kids have been begging to wear shorts and short-sleeved shirts (their favorite set of clothes). In Virginia, we can still have wide temperature swings from day to day. So, each day they ask if they can wear shorts and I check the temperature. I've been having them read the two-digit temperature value and they've gotten good at that. But, I wanted a way for them to figure out the type of clothes to wear. So, I tried creating a graphic to help them learn if a temperature value was hot or cold. I first thought of a gradient graphic showing values going from hot to cold. I used Excel to create a graphic like this: 
+
+{% include image.html name="temperature_excel" atl="Skinny Excel Version of Chart" caption="Skinny Excel Version of Chart" %}
+
+
+But, I didn't like the skinny, vertical layout. And, after doing some user testing with my kids, it still didn't answer their question if they can wear shorts.
+	
+So, I went with a more horizontal block style and included pictures of shorts, various, shirts, and jackets. I used PowerPoint to create this graphic:
+
+{% include image.html name="Temperature" atl="PowerPoint Version of Chart" caption="PowerPoint Version of Chart" %}
+
+
+It worked pretty well for helping them determine the types clothes they can wear. But, I noticed they struggled finding the actual number. I think it's because the numbers are in descending order and lumped together. So, I'm going to try this new version to see if it helps:
+
+{% include image.html name="Temperature_v02" atl="Final Version of Chart" caption="Final Version of Chart" %}
+
+Here is the [PowerPoint file](https://drive.google.com/file/d/14B5C5YGdg4YTG5Py_JBiicGz73sQJU8K/view?usp=sharing) if you want to customize it.
+	
+
+---
+layout: post
+title: Give Credit Like a Quarterback
+date: '2015-08-19T07:25:00.003-04:00'
+description: When to give credit and take blame
+permalink: /2015/08/give-credit-like-quarterback.html
+author: Stephen Ziegler
+tags:
+- work
+- leadership
+modified_time: '2016-11-26T10:15:25.927-05:00'
+blogger_id: tag:blogger.com,1999:blog-1727955271917225446.post-1778920929169844585
+blogger_orig_url: http://www.nerdthoughts.net/2015/08/give-credit-like-quarterback.html
+---
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/quintanomedia/4330080220/in/photolist-7ACMZw-8ahuKF-7Azsug-7AzhJk-7AzjVg-7Az8F4-7Azf5X-7ACHUw-7Az6di-7Azv2B-7AyVsv-7ACKHW-7Azci4-7ACQcu-7AznCt-7ADbkJ" title="Super Bowl Media Day Sun Life stadium - Peyton Manning Colts Quarterback"><img alt="Super Bowl Media Day Sun Life stadium - Peyton Manning Colts Quarterback" height="213" src="https://farm5.staticflickr.com/4060/4330080220_9e27b0f059_n.jpg" width="320" /></a>
+
+[Super Bowl Media Day Sun Life stadium - Peyton Manning Colts Quarterback](https://www.flickr.com/photos/quintanomedia/4330080220/in/photolist-7ACMZw-8ahuKF-7Azsug-7AzhJk-7AzjVg-7Az8F4-7Azf5X-7ACHUw-7Az6di-7Azv2B-7AyVsv-7ACKHW-7Azci4-7ACQcu-7AznCt-7ADbkJ) by Anthony Quintano
+	
+	
+I was talking yesterday about career advice and realized afterwards that I never talked about giving credit to others. It's a key part of leadership and your own career advancement.
+
+When I think of giving credit, I think of how a seasoned quarterback gives a press conference after a game. If the team lost, the quarterback takes the blame for his bad throws and poor timing. But, if they win, a good quarterback follow this standard script:
+> The O-line gave me time. <br/>
+> The running back opened up the passing game. <br/>
+> The receivers made great catches. <br/>
+> And, the defense kept us in the game. <br/>
+
+It's a great way to handle credit and blame. It's a technique that every leader, even our QB here in Washington, needs learn and practice. ---
+layout: post
+title: How to Easily Log Your Twitter Data Using Zapier and Dropbox
+description: Archiving tweets with Zapier and Dropbox
+date: '2015-10-09T13:46:00.002-04:00'
+author: Stephen Ziegler
+tags:
+- data
+- twitter
+modified_time: '2015-10-09T13:46:40.747-04:00'
+thumbnail: http://2.bp.blogspot.com/-DRSy59p_5Qw/Vhf4besIhTI/AAAAAAAAhKM/4paIpE5ZvKo/s72-c/twitter_zap_setup.png
+blogger_id: tag:blogger.com,1999:blog-1727955271917225446.post-766429352419566457
+blogger_orig_url: http://www.nerdthoughts.net/2015/10/how-to-easily-log-your-twitter-data.html
+---
+
+I often find myself looking for past tweets and followers trying to find a specific link to a blog post or an image. Twitter itself is pretty useless for this task. There are several ways to download your data from Twitter, but I've found a new way using [Zapier](https://zapier.com/) and [Dropbox](https://www.dropbox.com/) that doesn't required coding and allows you to track other data besides tweets. At some point, I'll index this data in Elasticsearch to make it really easy to find stuff. But for now, using a text editor's Find in a consolidated text file works pretty well as an MVP. In the future, I'd like to do some analysis with my followers. I'm especially fascinated with bots and how spammers are making them more and more realistic (including pics, topical tweets, short profile bios, realistic number of followers/following).
+
+Here's how you can set up a Zap to automatically append Twitter (tweets, mentions, favorites, new followers) data to a simple text file:
+
+* Create a Zap with Twitter/My Tweet as the trigger and Dropbox/Append Text File as the action. The Append Text File action is key to this solution and allows you to continually add to the end of the file. I think it's new within the last year or so. I had previously set up a Zap to store tweet information in a Google Spreadsheet but it forced me to set up the exact columns beforehand and was not easy to change.
+
+{% include image.html name="zapier_triggers" atl="Zapier triggers" caption="Zapier triggers" %}
+
+
+
+* Select and authenticate your Twitter and Dropbox accounts
+* Select the folder for your Dropbox files. I created a new folder called Twitter to store several files
+* Choose the fields to append to your file. I chose to use a multi-line format with record delimiters and field labels. I like this format because it is human-readable and will allow me to easily parse it in the future with a tool like AWK, even if the file becomes huge. To make it a little more readable, I added a literal "@" before any user name fields. Since I use the same file for tweets and mentions, I added a literal "type: mytweet" to help me separate that data.
+
+
+{% include image.html name="tweet_details" atl="Zapier tweet field mapping details" caption="Zapier tweet field mapping details" %}
+
+
+
+* Create other Zaps to log mentions, new followers and favorites. Here is how I setup the file contents for the other files:
+mentions:
+	
+{% include image.html name="mentions_details" atl="Zapier mentions field mapping details" caption="Zapier mentions field mapping details" %}
+
+
+favorites:
+{% include image.html name="favorites_details" atl="Zapier favorites field mapping details" caption="Zapier favorites field mapping details" %}
+
+
+new followers:
+
+{% include image.html name="followers_details" atl="Zapier followers field mapping details" caption="Zapier followers field mapping details" %}
+
+If you don't like this method, you can try [downloading your Twitter archive](https://support.twitter.com/articles/20170160), using scripting in a language like Python, or find an existing tool/service.
+---
+layout: post
+title: Creative Geoparser Tool for Natural Language
+description: Description of the three key pieces of a geoparser
+permalink: /2016/04/creative-geoparser-tool-for-natural.html
+date: '2016-04-02T00:09:00.000-04:00'
+author: Stephen Ziegler
+tags:
+- machine learning
+- gis
+- natural language
+modified_time: '2016-04-02T00:09:03.151-04:00'
+blogger_id: tag:blogger.com,1999:blog-1727955271917225446.post-3264684173076715521
+blogger_orig_url: http://www.nerdthoughts.net/2016/04/creative-geoparser-tool-for-natural.html
+---
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://clavin.bericotechnologies.com/"><img border="0" src="https://clavin.bericotechnologies.com/wp-content/uploads/2015/04/clavin_logo-300x163.png" /></a></div>
+
+While preparing for a client demo, someone recommended I look at [Clavin](https://clavin.bericotechnologies.com) as a geoparser to extract locations out of natural language text. I was impressed with the results and thought it was a pretty creative solution using three core open-source technologies to solve a problem:
+
+- [Stanford NER](http://nlp.stanford.edu/software/CRF-NER.shtml) - Performing named entity recognition (people, locations, organizations, times) out of natural language is tough. You need more than just a dictionary lookup of location names, especially for international locations that happen to match English words: "nice" and "Nice, France." The Stanford NER uses parts of speech patterns to intelligently guess when words are locations.
+- [Geoname gazetteer](http://download.geonames.org) - A comprehensive list of 10M locations, alternative names, and lat/longs
+- [Lucene](https://lucene.apache.org/) - A full text search engine used to quickly lookup text references, including fuzzy matches
+
+Clavin uses Stanford NER as the first pass for guesses on locations. It then uses Lucene to look up exact and fuzzy matches of the Geoname gazetteer data as the second pass on location detection. It works best on news-style language. It works pretty well, especially given the complexities of natural language.
+
+---
+layout: post
+title: Comparing Government Code Challenges
+date: '2016-07-25T07:00:00.000-04:00'
+author: Stephen Ziegler
+tags:
+- work
+- agile
+- api
+modified_time: '2016-11-26T10:13:35.809-05:00'
+thumbnail: https://4.bp.blogspot.com/-HPq-_UX53_M/V4xUWamfpWI/AAAAAAAAhOw/3qiLOJnElfYN5uHydQLc2HJHtU-hYZIngCLcB/s72-c/challenge.png
+blogger_id: tag:blogger.com,1999:blog-1727955271917225446.post-3169688308649052115
+blogger_orig_url: http://www.nerdthoughts.net/2016/07/comparing-government-code-challenges.html
+---
+
+
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<a href="https://4.bp.blogspot.com/-HPq-_UX53_M/V4xUWamfpWI/AAAAAAAAhOw/3qiLOJnElfYN5uHydQLc2HJHtU-hYZIngCLcB/s1600/challenge.png" imageanchor="1" style="margin-left: auto; margin-right: auto;">
+<img border="0" height="210" src="https://4.bp.blogspot.com/-HPq-_UX53_M/V4xUWamfpWI/AAAAAAAAhOw/3qiLOJnElfYN5uHydQLc2HJHtU-hYZIngCLcB/s320/challenge.png" width="320" />
+</a>
+</td>
+</tr>
+<tr>
+<td class="tr-caption" style="text-align: center;">Back of my head during a challenge code review!
+</td>
+</tr>
+</tbody>
+</table>I recently participated in another coding challenge as part of a government procurement. It was a my third one, and this challenge had some interesting differences in the set up of the challenge. It got me thinking about what I liked and didn't like across the three.
+<br />
+<br />
+<h2>
+<span style="color: #b45f06;">GSA Agile Delivery Services&nbsp;
+</span>
+</h2>
+<div>
+<a href="https://18f.gsa.gov/2015/06/15/agile-bpa-is-here/">https://18f.gsa.gov/2015/06/15/agile-bpa-is-here/
+</a>&nbsp;
+</div>
+<h3>
+<span style="color: #b45f06;">Liked:
+</span>
+</h3>
+<ul>
+<li>
+<b>Challenge itself
+</b> - I liked that the government actually did it. This was the first major coding challenge procurement and it was a bold change in an effort to shift government IT to more modern practices.
+</li>
+<li>
+<b>Detailed evaluation criteria
+</b> - 18F published a nice spreadsheet with detailed, technical evaluation criteria that made it easy for vendors to know what to accomplish.
+</li>
+<li>
+<b>Open-ended problem
+</b> - The challenge was to do something cool and interesting with FDA's recently published (and very well designed) APIs &nbsp;data sets on 
+<a href="https://open.fda.gov/api/">drugs, devices, and food.
+</a>&nbsp;It allowed a lot of creative freedom with played well to ICF's strengths in design, UX, and analytics.
+</li>
+<li>
+<b>Tech stack options
+</b> - Vendors had a lot of freedom in tech stack choices, as long as they were open-source. We used Angular, Node, and Elasticsearch which provided lots of flexibility on quick changes to the front-end or supporting data.
+</li>
+<li>
+<b>Transparency
+</b> - 18F and GSA were very transparent the entire time with lots of blog posts and an industry day. &nbsp;Vendors were well prepared for the challenge. It's a nice, easy way for the government to communicate about procurements without all of the legalese of official procurement communications.
+</li>
+</ul>
+<h3>
+<span style="color: #b45f06;">Didn't Like:
+</span>
+</h3>
+<ul>
+<li>
+<b>Initial ideas on challenge duration - 
+</b>Before it was released, 18F mentioned a 48 hour response. That would have been difficult, especially since participants in the challenge were still working on projects serving government clients. It's also a burden for work-life balance. I think that five business is the optimal duration for a challenge. It's a fair amount of time for vendors to show the stuff and short enough for quick procurements. 
+<span style="background-color: white;">The duration ended up being a couple of weeks.
+</span>
+</li>
+<li>
+<b>Questions - 
+</b>The biggest issue with the procurement for both vendors and the government was including the question period within the challenge timeframe. Government procurements have formal question and answer procedures to help make procurement fair and defensible. The government received and answered almost 200 questions during the challenge. This is a huge number of questions for a procurement and it took GSA a long time to answer them. This caused them to extend the submission deadline several time
+<span style="background-color: white;">s.&nbsp;
+</span>
+</li>
+<li>
+<b>Deadline extensions
+</b> - While extensions are usually welcomed on written proposals, they weren't in this case. The coding work is intense and you feel pressure to keep working to add new features to keep up with competition. The extensions frustrated vendors and the 
+<a href="https://18f.gsa.gov/2015/08/28/announcing-the-agile-BPA-awards/">government
+</a>.
+</li>
+<li>
+<b>Submission complexity
+</b> - The submission required several files and forms to be filled out beyond just sending the link to the repo. I think the forms were a function of the contract vehicle and GSA's hope to get new vendors included. The forms helped vendors double check that they met all of the submission requirements.
+</li>
+</ul>
+<h2>
+<span style="color: #b45f06;">EPA Environmental Digital Services
+</span>
+</h2>
+<div>
+<a href="https://18f.gsa.gov/2015/12/03/epa-environmental-digital-services-marketplace/">https://18f.gsa.gov/2015/12/03/epa-environmental-digital-services-marketplace/
+</a>
+<br />
+<h3>
+<span style="color: #b45f06;">Liked:
+</span>
+</h3>
+<ul>
+<li>
+<b>Another agency
+</b> - It was nice to see another agency try the prove-it style competition. But, I think this was driven mostly by Greg Godbout's move from GSA to EPA.
+</li>
+</ul>
+<br />
+<h3>
+<span style="color: #b45f06;">Didn't Like:
+</span>
+</h3>
+<div>
+<ul>
+<li>
+<b>Too early in procurement process
+</b> - The challenge was issued as part of a Request for Information (not Proposal). RFI's are usually used by government to quickly survey industry about the viability of vendors and approaches. These challenges should be reserved for actual procurements given the necessary investments of time and people.&nbsp;
+</li>
+<li>
+<b>Less transparency
+</b>&nbsp;- There was not a lot of published information about the procurement, compared to 18F. EPA could use their blog to provide updates and preview the procurement with industry.
+</li>
+</ul>
+<div>
+<h2>
+<span style="color: #b45f06;">VA Coding Challenge
+</span>
+</h2>
+<h3>
+<span style="color: #b45f06;">Liked:
+</span>
+</h3>
+<div>
+<ul>
+<li>
+<b>Functionality specificity
+</b> - This challenge gave several specific user stories that were to be implemented. The stories were clear and included Given/When/Then specifications that made them even easier to understand. Being more of an engineer than an artist, I preferred this specificity over the open-ended nature of the 18F challenge.&nbsp;
+</li>
+<li>
+<b>Neutral problem domain
+</b> - I think most of us assumed that challenge would be about veterans, but the VA created a neutral problem domain that level-set the playing field.&nbsp;
+</li>
+<li>
+<b>Questions 
+</b>- Questions were due two hours after the challenge started and were answered a few hours later. The quick turn around was nice. But, this was a much different circumstance than the 18F question period. This challenge was on a smaller contract vehicle, with fewer vendors, and with vendors experienced in government procurements.&nbsp;
+</li>
+</ul>
+</div>
+<h3>
+<span style="color: #b45f06;">Didn't Like:
+</span>
+</h3>
+<div>
+<ul>
+<li>
+<b>Required tech stack
+</b> - The tech stack was specified in this challenge. There was still freedom in architecture and front-end tools. But, the backend was fixed to the planned environment for the actual project.&nbsp;
+</li>
+<li>
+<b>72 hour elapsed duration
+</b> - The duration was measured in 72 hours elapsed from a 12:00PM planned release. At one point, the VA planned to delay the challenge for a day until it was pointed out that the challenge would than be due on a weekend. I think the best approach is to make a challenge due at 5PM on the 5th business day following the release. This avoids awkward end times and gives participants a good amount of time to respond.
+</li>
+</ul>
+</div>
+<div>I have really enjoyed working on the challenges and appreciate the moves by the federal government to improve IT.&nbsp;
+</div>
+</div>
+</div>
+</div>
+<div>
+<div style="color: black;">
+<div>
+<span style="color: #b45f06;">
+<br />
+</span>
+</div>
+</div>
+<span style="color: #b45f06;">
+</span>
+</div>---
+layout: post
+title: Dadsplaining at Work
+description: Finding the right way to teach at work
+permalink: /2016/11/dadsplaining-at-work.html
+date: '2016-11-25T09:41:00.002-05:00'
+author: Stephen Ziegler
+tags:
+- work
+- leadership
+modified_time: '2016-11-26T10:00:23.887-05:00'
+thumbnail: https://4.bp.blogspot.com/-hmyKSxGoK7k/WDhELEnD9FI/AAAAAAAAhRc/0FIRgFwk248UuAUiEbDZQnmxp8KQZflCgCLcB/s72-c/skype.png
+blogger_id: tag:blogger.com,1999:blog-1727955271917225446.post-1541103662754598807
+blogger_orig_url: http://www.nerdthoughts.net/2016/11/dadsplaining-at-work.html
+---
+
+<div class="separator" style="clear: both; text-align: center;"><a href="http://www.partyworld.ie/store_images/customcontent/0/homer_simpson_picture_jpg.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://www.partyworld.ie/store_images/customcontent/0/homer_simpson_picture_jpg.jpg" height="320" width="185" /></a></div><br /><br />
+
+
+Growing up, my dad wouldn't just answer a question from the kids. He would follow it up with background info, reasons why, and ask us related questions. It always stuck with me and I find myself "dadsplaining" things to my kids. It's a good, impromptu moment for teaching and getting the kids to think creatively and analytically.
+
+I also try to do it with co-workers, but I'm sensitive not to force it on people like I force it on my kids. I also try to save it for receptive audiences. I recently helped a team look into a slow data conversion routine. I was convinced that indexes would help since the total data manipulated was less than .5GB (pretty small in database terms).
+
+I used my usual story for explaining how indexes can and cannot help, depending on the uniqueness of the index columns:
+
+> Imagine I gave you a 1,000 page medical encyclopedia and asked you to find the verb of every sentence that had the word "cancer" in it. How would you do that? Would you open to page 1 and start reading? That would be a slow way to do it and is equivalent to a full-table scan on a large table.	
+
+> The faster way would be to flip back to the index, see if "cancer" is one of the indexed words, and jump directly to those pages to read. You might only have to read a few pages and this would be a great use of an index. Because the word cancer is pretty unique across the pages, it saves a lot of time reading pages. This is like an index with high selectivity: the number of unique items in the index compared to the number of items in the table.
+
+> Imagine if the index of the book told you that "cancer" appeared somewhere between pages 200 and 700 or it listed several hundred pages where cancer appeared. Or, imagine you wanted to find the verbs of sentences that contained the word "the." A database table index wouldn't help you much in these scenarios. This is like an index with low selectivity. There aren't enough unique index values to help find exact records.
+	
+I also described how composite indexes are needed to match the the exact columns and column order of the where clauses in your SQL. I think that was the missing piece in the previous attempt to add indexes to improve performance.
+
+I got a nice IM after the discussion thanking me for the descriptions of indexes. I don't always dadsplain at work, but when I do, it's nice to get some positive feedback.
+
+{% include image.html name="skype" atl="Skype Message" caption="Skype Message" %}
+
+---
+layout: post
+title: From A Pic of Sweden To My Toughest Customer
+date: '2017-01-05T06:33:00.002-05:00'
+author: Stephen Ziegler
+tags: 
+modified_time: '2017-01-05T06:33:27.175-05:00'
+thumbnail: https://1.bp.blogspot.com/-thAXTIUvBik/WG3T899a2OI/AAAAAAAAhTE/ElVho-eZNxcDLHhKSokWbYpLhdjaHCCeACLcB/s72-c/sweden.jpg
+blogger_id: tag:blogger.com,1999:blog-1727955271917225446.post-1156875182928694655
+blogger_orig_url: http://www.nerdthoughts.net/2017/01/from-pic-of-sweden-to-my-toughest.html
+---
+
+A few months ago, Iris Classon tweeted a picture from Gothenburg, Sweden.<br />
+
+<blockquote class="twitter-tweet" lang="en">Out for a walk. Gothenburg University at 2AM under a full moon. Simply magical. <a href="http://t.co/TidOiWdUcw">pic.twitter.com/TidOiWdUcw</a><br />— Iris Classon (@IrisClasson) <a href="https://twitter.com/IrisClasson/statuses/435215451283787776">February 17, 2014</a></blockquote><script async="" charset="utf-8" src="//platform.twitter.com/widgets.js"></script>
+
+It immediately made me think of one of my toughest clients and why I admired him. He happened to be Swedish and from Gothenburg. I'm finally getting to blog about it now.
+
+<iframe frameborder="0" height="300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d272877.2773129558!2d11.8936825!3d57.70195485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464f8e67966c073f%3A0x4019078290e7c40!2sGothenburg!5e0!3m2!1sen!2sus!4v1401423413391" style="border: 0;" width="400"></iframe> 
+
+I met him while working on a large enterprise project to replace a series of mainframe systems with my company's product. The system was going to be used across all business lines and geographies for a large petrochemical company.
+
+He gained a reputation as a tough personality in early planning meetings with his constant focus on the needs of European users. I, along with many others on the project (including his US colleagues), brushed him off. But, as time went on, I started truly listening to him and realized that he had very valid points and concerns.
+
+One time when he was visiting the US, he offered to come to my office and we spent a day discussing the project, the software, his business, and the needs of European users. It was a wonderful session. I came to understand that his passion for user needs in meetings came from his passion for the safety of employees and customers in the dangerous world of chemical manufacturing and industrial use. He had personally seen how failure to follow safety protocols could lead to explosions and in one case, a fatality. He knew the full business backwards and forwards and could easily relate it to software needs and edge cases. He had a great appreciation for the power of IT and he knew his existing system, while an old mainframe application, was perfectly tailored to the users' needs. He took his time explaining all of this to a greenhorn project manager who didn't even realize Europeans formatted dates differently. My respect for him grew immensely after that working session.
+
+I also grew to love his smart sense of humor. At one point, he asked for a ballpark estimate for an enhancement. As a consultant, I was always hesitant to give an immediate, gut feeling estimate to a client. After hemming and hawing for a while, he said:
+
+> "Steve, if we can put a man on the moon, surely you can give me this enhancement."
+
+In a different meeting, he perfectly summarized the entire business of producing chemicals:
+- make big molecules smaller
+- make small molecules bigger
+- re-arrange the order of molecules
+
+I loved that simple explanation and used it all of the time with my team.
+
+If this post had to have a takeaway, I guess it would be: Listen to your clients/users, especially the loud and passionate ones. So, thanks Iris, for the trip down project management memory lane!
+
+---
+layout: post
+title: Losing Confidence Cleaning Up After Equifax
+description: This weekend, I spent time trying to clean up from the Equifax data breach. In the era of fake news and fake URLs, I've lost a lot confidence in websites dealing with sensitive information.
+permalink: /2017/09/losing-confidence-cleaning-up-after.html
+date: '2017-09-11T09:04:00.002-04:00'
+author: Stephen Ziegler
+tags: 
+modified_time: '2017-09-12T07:25:18.153-04:00'
+thumbnail: https://3.bp.blogspot.com/-0R8vx4QHYi8/WbZtHKaCMjI/AAAAAAAAqP0/1iHtmfOiZpciNTYw8DNouz1MxIlrMRk4wCLcBGAs/s72-c/betterwhois.png
+blogger_id: tag:blogger.com,1999:blog-1727955271917225446.post-2052866521784574926
+blogger_orig_url: http://www.nerdthoughts.net/2017/09/losing-confidence-cleaning-up-after.html
+---
+
+This weekend, I spent time trying to clean up from the Equifax data breach. In the era of fake news and fake URLs, I've lost a lot confidence in websites dealing with sensitive information. My experience this weekend shows hows how the credit bureaus, especially Equifax, miss key CX opportunities to instill confidence in their services. While there is a lot of CX that companies should provide in response to a data breach (Troy Hunt has great advice), I'll focus on the digital touch points I encountered.
+
+* The equifaxsecurity2017.com URL is suspicious. I would have preferred to see equifax.com/security2017 or security2017.equifax.com. I had to look it up in BetterWhois to see who registered the domain. I know this isn't full-proof, but I was glad to see the Registrant Organization was Equifax Inc. Note it was registered 17 days before the breach announcement.
+
+{% include image.html name="betterwhois" atl="" caption="" %}
+
+
+* They are using HTTPS. You'd expect that from most websites these days, but you never know!
+* For part of Friday, using the TrustedID Premier enrollment eligibility website waived your rights for any future legal action.
+A few hours later, Equifax clarified the language. 
+
+<blockquote class="twitter-tweet" data-lang="en" style="display: block; margin-left: auto; margin-right: auto;"><p lang="en" dir="ltr">PSA: If you check Equifax&#39;s site to see if your data was stolen, you *waive your rights* to sue Equifax or be part of a class action suit. <a href="https://t.co/p4AlmmLQ3r">pic.twitter.com/p4AlmmLQ3r</a></p>&mdash; Zack Whittaker (@zackwhittaker) <a href="https://twitter.com/zackwhittaker/status/906178254331142144?ref_src=twsrc%5Etfw">September 8, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr" style="display: block; margin-left: auto; margin-right: auto;">This language is unacceptable and unenforceable. My staff has already contacted <a href="https://twitter.com/Equifax?ref_src=twsrc%5Etfw">@Equifax</a> to demand that they remove it. <a href="https://t.co/vT0x7f5Xhc">https://t.co/vT0x7f5Xhc</a></p>&mdash; Eric Schneiderman (@AGSchneiderman) <a href="https://twitter.com/AGSchneiderman/status/906195350532304896?ref_src=twsrc%5Etfw">September 8, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+* The TrustedID Premier enrollment eligibility website just seemed to be a mechanism to schedule people to come back for enrollment. On Friday night, word got around that the tool displayed the same information regardless of what name and SSN were entered.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr" style="display: block; margin-left: auto; margin-right: auto;">What an absolute mess this situation is: &quot;We tested Equifax&#39;s data breach checker — and it&#39;s basically useless&quot; <a href="https://t.co/e9nTHT3Tn9">https://t.co/e9nTHT3Tn9</a></p>&mdash; Troy Hunt (@troyhunt) <a href="https://twitter.com/troyhunt/status/906295121494159360?ref_src=twsrc%5Etfw">September 8, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+* The process of signing up for fraud alerts with the three bureaus doesn't send email confirmations consistently. When making transactions online, I expect emails to my registered address confirming my activity (purchases, address change, login from a new device). It gives me confidence that my request was received and processed. 
+
+Equifax did not send an email confirmation and only suggested that I
+
+> "please print this page and save your Confirmation Number for future reference."
+
+Experian did send an email, but left out a field documenting the expiration date:
+
+> "A temporary fraud alert has been successfully added to your credit report. This alert is scheduled to remain on your credit report until . Print this information for your records." 
+
+TransUnion gave me the most confidence with a professional-looking site and accurate email confirmation.
+
+Unfortunately, more data breaches will occur. Hopefully, companies will take some lessons learned from the Equifax breach to improve the CX of the response and start to repair confidence with their customers.	---
+layout: post
+title: Finally posted on dev.to
+description: I finally wrote a post for dev.to. I talked about learning the building blocks of software development as a way to fend of the desire to learn every new thing.
+permalink: /2018/03/finally-posted-on-devto.html
+date: '2018-03-04T11:00:00.000-05:00'
+author: Stephen Ziegler
+tags:
+- career
+modified_time: '2018-03-04T11:06:47.460-05:00'
+blogger_id: tag:blogger.com,1999:blog-1727955271917225446.post-4607444988755046571
+blogger_orig_url: http://www.nerdthoughts.net/2018/03/finally-posted-on-devto.html
+---
+
+{% include image.html name="copyingandpasting" atl="devto fake O'Reilly cover " caption="Copying and Pasting From StackOverflow" %}
+
+I finally wrote a post for [dev.to](https://dev.to/stevezieglerva/you-dont-have-to-learn-everything--718). I talked about learning the building blocks of software development as a way to fend of the desire to learn every new thing.
+
+It's a great, welcoming community. I came for the fake O'Reilly covers and stayed for the great posts and community. Here are some of my favorite covers:
+
+{% include image.html name="itdepends" atl="devto fake O'Reilly cover " caption="It Depends" %}
+ 
+{% include image.html name="temporaryworkarounds" atl="devto fake O'Reilly cover " caption="Temporary Workarounds" %}
+
+---
+layout: post
+title: Under Construction
+description: Moving my blog from Blogger to Jekyll and AWS S3
+date: '2018-03-26T00:00:00.000-05:00'
+author: Stephen Ziegler
+tags:
+- dev
+---
+
+I'm in the process of moving my blog from Bloger to a static site generated by Jekyll and served via an AWS S3 bucket. I got impatient and made the DNS switch last night while I'm still migrating the content. The automated conversion tool left a lot to be desired and still linked to assets in Blogger. So, I'll be manually converted old posts to markdown over time.
+
+
+---
+layout: post
+title: Tailing CloudWatch Logs
+description: Open source Python project to make searching AWS CloudWatch logs easier
+date: '2018-07-22T00:00:00.000-05:00'
+author: Stephen Ziegler
+tags:
+- dev, aws
+---
+
+The [awslogs](https://github.com/jorgebastida/awslogs) project provides a really easy way to search and understand AWS CloudWatch logs. You can easily wrap the tool in a loop to tail the logs. Here is a simple DOS batch file that searches for lines with keywords (like "starting", "processing"). It both appends the results to a running log.txt file and outputs them to the console.
+
+{% highlight shell %}
+echo off
+title CloudWatch Tail
+
+:repeat
+echo *** %date% %time%
+call awslogs get /aws/lambda/aws-lnkchk-extract-links --start="1m" --filter-pattern="?starting ?processing ?downloading ?extracting ?checked ?finished ?ERROR ?Error ?Exception ?skipping" > results.txt
+type results.txt
+type results.txt >> log.txt
+
+REM Silent wait
+CHOICE /C:AB /d:A /T:15 >NUL
+
+goto repeat
+
+{% endhighlight %}
+
+
+---
+layout: post
+title: Elasticsearch - From open source to $B
+description: Elastic's journey from full-text search to a full analytics stack
+tags: elasticsearch
+---
+
+Elasticsearch went public last week. 
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Today was a grand day. Thank you to everyone for joining us on this journey. We look forward to what happens next. <a href="https://twitter.com/search?q=%24ESTC&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$ESTC</a> <a href="https://twitter.com/hashtag/Elasticsearch?src=hash&amp;ref_src=twsrc%5Etfw">#Elasticsearch</a> <a href="https://twitter.com/hashtag/RingZeBell?src=hash&amp;ref_src=twsrc%5Etfw">#RingZeBell</a> <a href="https://t.co/eYnZPpph11">pic.twitter.com/eYnZPpph11</a></p>&mdash; elastic (@elastic) <a href="https://twitter.com/elastic/status/1048302021143670786?ref_src=twsrc%5Etfw">October 5, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+It's been really cool seeing the company evolve. I'm a huge fan of Elasticsearch. I started using it when porting a process to index my email from Solr. Compared to Solr, I really liked the more RESTful API using JSON. I also really liked how every field was dynamic by default. It makes it so easy to just throw data into it.
+
+It was interesting to watch their journey, especially as they shifted from just full-text search to a full analytics stack. You could see the transition through their partnerships and acquisitions: 
+
+* Joined with Logstash and Kibana to make the ELK stack and combine the power of text searching with log metrics and visualizations
+* Bought Found to provide a SAAS offering for their stack
+* Bought Packet to provide lightweight data shippers for all sorts of monitoring
+* Bought Prelert to enable machine learning forecasting and anomoly detection
+
+So, congratulations to everyone at Elastic. It's well-deserved success!
+---
+layout: post
+title: How To Use A Meeting To Elevate a Team Member
+description: How to use a meeting to elevate a junior team member
+tags: leadership
+---
+
+{% include image.html name="buddy-meetings" atl="Buddy the Elf says 'I like meetings. Meetings are my favorite.'" caption="Buddy Loves Meetings" %}
+
+
+I've been fortunate in my career to have very strong advocates. My advocates would mentor me and provide good opportunities for work and career advancement. A few years into my first job, my advocates positioned me for a leadership role on a new, large IT modernization project. They used a kickoff meeting with the client to elevate my status into a leadership role. The client, ExxonMobil, had just completed their merger to become the largest company in the world and was going to replace dozens of legacy systems with a new global, health and safety system for all of their business units. 
+
+For the kickoff meeting, ExxonMobil was going to fly in senior leaders from around the world to hear our company's plan for the project. To my surprise, my advocates assigned me a speaking role on a data conversion tool that I had never used. I had no business telling 30-year petrochemical industry veterans how I was going to use this tool to convert their complex legacy data. I had to scramble to talk to the tool developer and learn everything I could from her before the meeting. 
+
+On the day of the kickoff meeting, I was able to get through the presentation (with no questions luckily!). After the meeting, my advocates told me that the  clients were happy that I was on the project. Knowing how inexperienced I was, I realized how important perceptions, not reality, are. I also realized that my advocates did several specific things to change perceptions about me and elevate my status.
+
+As I've been an advocate for people, I try to use those same techniques to elevate people (usually developers) around key project or company meetings. Here are some of the things I do:
+
+* **Have the developer send the meeting invite** - This shows some ownership over the meeting and topic, even if it is just a perception.
+* **Make sure she has a speaking role** - She should have a defined speaking role during the meeting, even if just to review the agenda. You can use subsequent meetings to increase the speaking role.
+* **Coach him on how to confidently introduce himself** - A major factor in the perception of the developer's status is his confidence. Coach the developer on how to introduce himself with strong, active language: "I'm John Doe and I will be <leading/reviewing/building/showing/designing> ..." Be sure to avoid phrases like "I'm here because *Steve invited me*" or "I'll be *helping* Steve to <lead/review/build/show/design> ..."
+
+---
+layout: post
+title: Resolving Git Multiple Credential Helpers
+description: My first blog post
+---
+
+In playing with getting git's credential helper to work on Windows, I accidentally added multiple helpers to my local config file. It took me a while to figure out where it was stored and how to reset it. I used this command when in the local repo directory.
+
+{% highlight shell %}
+git config  --unset-all credential.helper
+{% endhighlight %}
+
+This [Stack Overflow](https://stackoverflow.com/questions/11693074/git-credential-cache-is-not-a-git-command) post got me close but was based on the multiple values coming from different versions of the config file. The key was the --unset-all option. This [blog post](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Where-system-global-and-local-Windows-Git-config-files-are-saved) helped explain the different scope of config files.
+
+
+
+---
+layout: post
+title: Script To List AWS Services In Use
+description: script that uses the AWS CLI to list basic information about the AWS services in use
+---
+I recently created [aws-account-summary](https://github.com/icfnext/aws-account-summary) to list out basic information on the AWS services in use by an account. It comes in handy when trying to confirm current or newly created infrastructure. I went with quick-and-dirty approach of just finding text in AWS CLI output. It's suprisingly useful for such little code.
+
+
+### Sample Output
+```
+Sun 06/02/2019  8:47:59.33
+*
+*
+* API Gateway
+            "name": "TestAPI",
+*
+*
+* Cloudfront
+                            "DomainName": "jekyll-site-1.s3.amazonaws.com",
+                "DomainName": "d1xau5ri19gn0n.cloudfront.net",
+                            "DomainName": "www.nerdthoughts.net.s3.amazonaws.com",
+                "DomainName": "d20ip71gqm0ltw.cloudfront.net",
+*
+*
+* Cloudwatch
+            "logGroupName": "/aws/aes/domains/ziegler-es/application-logs",
+            "logGroupName": "/aws/codebuild/DocumentLambdas",
+            "logGroupName": "/aws/codebuild/NCStateFair",
+            "logGroupName": "/aws/codebuild/nerdthoughts",
+            "logGroupName": "/aws/lambda/aws-code-index-bulk-load",
+            "logGroupName": "/aws/lambda/aws-code-index-escape-files",
+            "logGroupName": "/aws/lambda/aws-code-index-escape-files-2",
+            "logGroupName": "/aws/lambda/aws-code-index-format-files",
+            "logGroupName": "/aws/lambda/aws-code-index-stream-bulk-load",
+            "logGroupName": "/aws/lambda/aws-dynamodb-to-es-bulk",
+            "logGroupName": "/aws/lambda/aws-lnkchk-cache-stream",
+            "logGroupName": "/aws/lambda/aws-lnkchk-dynamodb-stream-to-es",
+            "logGroupName": "/aws/lambda/aws-lnkchk-extract-links",
+            "logGroupName": "/aws/lambda/aws-lnkchk-log-stream-to-es",
+            "logGroupName": "/aws/lambda/aws-lnkchk-queue-stream",
+            "logGroupName": "/aws/lambda/aws-lnkchk-start",
+            "logGroupName": "/aws/lambda/aws-read-s3-es-events-in-chunks",
+            "logGroupName": "/aws/lambda/aws-s3-to-es",
+            "logGroupName": "/aws/lambda/aws-tika-app",
+*
+*
+* Running EC2 instance
+                    "KeyName": "linux",
+*
+*
+* Elasticsearch Domains
+    "DomainNames": [
+            "DomainName": "my-es"
+*
+*
+* Firehose
+{
+    "DeliveryStreamNames": [
+        "code-index-files-csv",
+        "code-index-files-es-bulk",
+        "code-index-logs"
+    ],
+    "HasMoreDeliveryStreams": false
+}
+*
+*
+* Lambdas
+            "FunctionName": "aws-lnkchk-start",
+            "FunctionName": "aws-code-index-escape-files",
+            "FunctionName": "BlogBuild",
+            "FunctionName": "nc-state-fair-food-finder",
+            "FunctionName": "aws-read-s3-es-events-in-chunks",
+            "FunctionName": "aws-lnkchk-dynamodb-stream-to-es",
+            "FunctionName": "aws-dynamodb-to-es-bulk",
+            "FunctionName": "ephemeral",
+            "FunctionName": "aws-code-index-format-files",
+                    "type": "code-index"
+            "FunctionName": "aws-s3-to-es",
+            "FunctionName": "BingSpellcheck",
+            "FunctionName": "aws-lnkchk-extract-links",
+            "FunctionName": "aws-code-index-bulk-load",
+            "FunctionName": "aws-code-index-stream-bulk-load",
+            "FunctionName": "aws-lnkchk-log-stream-to-es",
+            "FunctionName": "aws-tika-app",
+                    "type": "tika"
+*
+*
+* RDS
+*
+*
+* S3 Buckets
+            "Name": "aws-s3-to-es",
+            "Name": "aws-tika-app-code",
+            "Name": "code-index",
+            "Name": "code-index-2",
+            "Name": "code-index-3",
+            "Name": "link-checker",
+            "Name": "lnkchk",
+            "Name": "lnkchk-100-pages",
+            "Name": "lnkchk-complex-site-integration",
+            "Name": "lnkchk-simple-site-integration",
+*
+*
+* Sagemaker
+*
+*
+* Secretsmanager
+*
+*
+* SQS
+{
+    "QueueUrls": [
+        "https://queue.amazonaws.com/9999/code-index",
+        "https://queue.amazonaws.com/9999/code-index.fifo",
+        "https://queue.amazonaws.com/9999/link-checker"
+    ]
+}
+*
+*
+* Users
+            "UserName": "joesmith"
+
+```

@@ -13,7 +13,7 @@ class SubmissionSpellChecker():
 	def __init__(self):
 		self.spell = SpellChecker()
 		self.spell.word_frequency.load_text_file("all_mds.txt")
-		ignore_words = ["aws"]
+		ignore_words = ["aws", "orig", "equifaxsecurity", "npm"]
 		for word in ignore_words:
 			self.spell.word_frequency.add(word)
 
