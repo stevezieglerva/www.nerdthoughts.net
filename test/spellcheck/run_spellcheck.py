@@ -68,9 +68,22 @@ def read_markdown_filtered_file(filename):
 
 
 
+
+if (len(sys.argv) != 3):
+	raise ValueError("Error: Expected two command line parameters to the script.")
+
+path_to_check = sys.argv[1]
+error_on_mispellings = sys.argv[2]
+
+
+print("Arguments:")
+print(path_to_check)
+print(error_on_mispellings)
+
+
 errors_found = False
 year = datetime.datetime.now().year
-md_files = glob.glob("../../_posts/{}*.md".format(year))
+md_files = glob.glob(path_to_check)
 for file in md_files:
 	text_lines = read_markdown_filtered_file(file)  
 	line_count = len(text_lines)
@@ -84,7 +97,8 @@ for file in md_files:
 		print()
 		errors_found = True
 
-if errors_found:
+
+if errors_found and error_on_mispellings == "fail":
 	sys.exit(1)
 
 

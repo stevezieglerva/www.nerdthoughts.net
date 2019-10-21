@@ -5,6 +5,8 @@ description: script that uses the AWS CLI to list basic information about the AW
 ---
 I recently created [aws-account-summary](https://github.com/icfnext/aws-account-summary) to list out basic information on the AWS services in use by an account. It comes in handy when trying to confirm current or newly created infrastructure. I went with quick-and-dirty approach of just finding text in AWS CLI output. It's suprisingly useful for such little code.
 
+ddd zieglerddk
+
 ### Sample Output
 ```
 Sun 06/02/2019  8:47:59.33
