@@ -62,7 +62,8 @@ We believe that offering $25 gift cards to sign up new free-tier customers
 for existing customers
 will achieve an increase in sales of the premium subscription service.
 
-We'll know this is true when 25% of the new customers have purchased the premium service.
+We'll know this is true when 25% of the new customers have purchased 
+the premium service.
 ```
   
 
