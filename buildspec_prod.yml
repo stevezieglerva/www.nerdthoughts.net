@@ -28,6 +28,8 @@ phases:
       - echo "******** Building Production Jekyll site ********"
       - rm -r _site
       - JEKYLL_ENV=production bundle exec jekyll build --verbose
+      - echo "******** Removing test folder ********"
+      - rm -r test
       - echo "******** Copying to S3 nerdthoughts.net-staging to www.nerdthoughts.net ********"
       - aws s3 sync _site/ s3://www.nerdthoughts.net --delete
       - aws s3 sync _site/ s3://nerdthoughts.net --delete      

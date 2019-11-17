@@ -3,7 +3,7 @@ layout: post
 title: AWS Cloudformation Template for CloudTrail 
 description: AWS Cloudwatch Cron Expression for every time minutes
 ---
-Here is a Cloudformation template snipper to create a CloudTrail that is used to also record data events for Lambda invocations and S3 operations in addition to the typical management events from CloudTrail.
+Here is a Cloudformation template snippet to create a CloudTrail that is used to also record data events for Lambda invocations and S3 operations in addition to the typical management events from CloudTrail.
 
 ```
   CloudTrail:
