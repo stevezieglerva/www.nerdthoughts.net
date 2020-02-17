@@ -15,7 +15,7 @@ class SubmissionSpellChecker():
 		ignore_words = ["aws", "orig", "equifaxsecurity", "npm", "devs", "microservices", 
 						"lambda", "devops", "html", "nbsp", "txt", "blog", "shoup", "elasticsearch", "jez",  "humble", "forsgren", "devopsdays",
 						"youtube", "jpg", "flickr", "async", "kubernetes", "tensorrt", "pachyderm", "nvidia", "martez", "outages", "kubeflow",
-						"charset", "utf", "vps", "rdu", "devopsday", "embedr"]
+						"charset", "utf", "vps", "rdu", "devopsday", "embedr", "vscode"]
 		for word in ignore_words:
 			self.spell.word_frequency.add(word)
 
