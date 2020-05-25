@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CloudWatch Metric Works, But Alarm Doesn't
+title: CloudWatch Metric Filter Works, But Alarm Doesn't
 description: How to get a CloudWatch alarm for a log metric to work if scripted through Python boto
 tags: aws
 ---
